@@ -1,28 +1,549 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icons/favicon.svg" type="image/png" />
-    <meta name="description" content="Homepage / Online Portfolio of Le Trang Nguyen" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" href="img/logo-small.png" type="image/png" />
     <title>Trang's</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="vendors/linericon/style.css" />
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css" /> -->
+    <script
+      src="https://kit.fontawesome.com/cacb60c650.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css" />
+    <link rel="stylesheet" href="css/magnific-popup.css" />
+    <link rel="stylesheet" href="vendors/nice-select/css/nice-select.css" />
+    <link rel="stylesheet" href="vendors/animate-css/animate.css" />
+    <link rel="stylesheet" href="vendors/flaticon/flaticon.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  <!--CSS Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@600&family=Source+Sans+Pro&display=swap"
+      rel="stylesheet">
 
-  <!-- main css -->
+    <!-- main css -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
   <body>
 
+    <!-- Global site tag (gtag.js) - Google Analytics
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-179551744-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-179551744-2');
+    </script> -->
 
 
-  <!--JS Bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 
+    <!--================Header Menu Area =================-->
+    <header class="header_area">
+      <div class="main_menu">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand" href="index.html"
+              ><img src="img/logo-studio.png" width="120px" alt="studio logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div
+              class="collapse navbar-collapse offset"
+              id="navbarSupportedContent"
+            >
+              <ul class="nav navbar-nav menu_nav justify-content-end">
+                <!-- <li class="nav-item active">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="ds-projects.html">Datasheets</a>
+                </li> -->
+                <li class="nav-item">
+                  <a class="nav-link" href="#abt-me">ABOUT ME</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/work.html">WORK</a>
+                <!-- <li class="nav-item">
+                  <a class=" "nav-link" href="/code-of-ethics.html">CODE OF ETHICS</a> -->
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <!--================Header Menu Area =================-->
+
+    <!--================ Start Portfolio Area =================-->
+    <section class="section_gap portfolio_area" id="work">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <div class="main-title">
+              <!-- <h1>WORK</h1> -->
+              <p>
+                 
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="projects_fillter">
+              <ul class="filter list">
+                <li class="active" data-filter="*"><h6>All Categories</h6></li>
+                <li data-filter=".eda"><h6>EDA & Visualization</h6></li>
+                <li data-filter=".iot"><h6>Industrial IoT</h6></li>
+                <li data-filter=".ds"><h6>Data Science</h6></li>
+                <li data-filter=".nlp"><h6>NLP & NLU</h6></li>
+              </ul>
+            </div>
+          </div>
+        </div> -->
+        <div class="projects_inner row grid">
+          <div class="grid-sizer col-sm-6 col-md-3 col-lg-3"></div>
+
+          <div class="col-lg-3 col-sm-6 grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/spiral2.gif"
+                alt=""
+              />
+              <div class="projects_text">
+                <!-- <a href="ds-projects.html">
+                  <h4>Complete list of projects</h4> -->
+                </a>
+                <p></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds nlp grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img\gallery\plutopay.png"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://letrang.myportfolio.com/pluto-pay-mobile-web-app"
+                >
+                  <h4>PlutoPay e-wallet</h4>
+                </a>
+                <p>Mobile web app</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds nlp grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img\gallery\contract.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/docker-bert-cuad.git"
+                >
+                  <h4>Bert implementation for contract analysis and clause extraction</h4>
+                </a>
+                <p>(Made with Transformer Bert, Streamlit, 2022)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img\gallery\git.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/CML-test"
+                >
+                  <h4>CI/CD for Data Science</h4>
+                </a>
+                <p>(Made with Github Actions, 2021)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds eda grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img\gallery\command-line.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/Bash_course"
+                >
+                  <h4>DS at the command line</h4>
+                </a>
+                <p>(Made with Bash script, 2021)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds nlp grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/book(2).jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/NLP-Handbook"
+                >
+                  <h4>NLP Sentiment Analysis Handbook</h4>
+                </a>
+                <p>(Made with TextBlob, NLTK, Scikit-Learn, and LSTM, 2021)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds nlp grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/NPLaaM.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/NPLaaMS"
+                >
+                  <h4>NPL as a MicroService</h4>
+                </a>
+                <p>(Made with Doker, 2020)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 iot eda grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/dataviz.png"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/pulse/predictive-maintenance-use-towards-industry-40-mauro-benetti/"
+                >
+                  <h4>Industry 4.0 PdM use case</h4>
+                </a>
+                <p>(Made with Jupyter Notebook, 2020)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/book.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/NPL-aaS"
+                >
+                  <h4>NLP as a Service</h4>
+                </a>
+                <p>(Made with Streamlit, 2020)</p>
+              </div>
+            </div>
+          </div>
+         
+          <div class="col-lg-3 col-sm-6 col-sm-12 ds nlp grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/drinks.png"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://www.linkedin.com/pulse/covid-19-dataset-analysis-mauro-benetti/"
+                >
+                  <h4>COVID-19 Dataset Analysis</h4>
+                </a>
+                <p>(Made with Python and SpaCy, 2020)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 eda nlp grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/happiness2.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/Elastic-and-Twitter"
+                >
+                  <h4>Text Analysis Elastic Search & Twitter</h4>
+                </a>
+                <p>(Made with Docker, 2019)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 ds eda grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/meteorites.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/CRISP-DM-Rossmann"
+                >
+                  <h4>Rossmann time series forecasting</h4>
+                </a>
+                <p>(Made with Jypyter following CRISP-DM, 2019)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 iot grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/flight.jpg"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/HPAC-Hot-path-analytic-container"
+                >
+                  <h4>Analytics in IoT </h4>
+                </a>
+                <p>(Made with Docker, 2019)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 iot grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/esp.png"
+                alt=""
+              />
+              <div class="projects_text">
+                <a
+                  href="https://github.com/mbenetti/PhysicalComputing.git"
+                >
+                  <h4>Micropython para IoT devices </h4>
+                </a>
+                <p>(Made with Jupyter, 2020)</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-sm-6 grid-item">
+            <div class="projects_item">
+              <img
+                class="img-fluid w-100"
+                src="img/gallery/moss.gif"
+                alt=""
+              />
+              <div class="projects_text">
+                <a href="ds-projects.html">
+                  <h4>Project's Datasheets</h4>
+                </a>
+                <p></p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      
+    </section>
+  <!-- <div>Photo credits: Unsplash and Pixabay</div> -->
+    <!--================ End Portfolio Area =================-->
+
+    <!--================ Start About Area =================-->
+    <section class="about-area section_gap gray-bg" id="abt-me">
+      <div class="container">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-4 about-left">
+            <img class="img-fluid" src="img/profile.jpg" alt="profile picture" width="350" height="350" />
+          </div>
+          <div class="col-lg-7 col-md-12 about-right">
+            <div class="main-title text-left">
+              <h1>ABOUT ME</h1>
+            </div>
+            <div class="mb-50 wow fadeIn" data-wow-duration="2.8s">
+              <p>
+                I was a low-tech tree hugger.
+              </p>
+              <p>
+                I love the land and want to see great things growing from it. That’s how I became a landscape architect.
+              </p>
+              <p>
+                I grew up in Vietnam without the internet. There was no access to computers. There was even scanty food or medicines. Vietnamese who were born before the border was open in 1986 are often seen smaller. That’s how I could see things that big people often miss.
+              </p>
+              <p>
+                I wanted to see the world, so I traveled. My first trips were on scooter around the country with a map book. That was before Google and Facebook. Later I couchsurfed in 25 countries with my smartphone. I love talking with people I met and learning about their life, their hope and dreams. That's when I started seeing the limitation of my work. Landscape architectural projects are tied to a physical place and can only be accessed by the people in the region.
+              </p>
+              <p>
+                The world has changed. Music has changed. The way people communicate with each other and organize among communities has also changed. How much I love the simplicity of an analog life; I appreciate the endless possibilities of how digital tools could reach out to people.  My work has shifted from the built environment to its virtual infrastructure. 
+              </p>
+              <p>
+                That’s when I decided to become an awesome UX designer.
+              </p>
+              <!-- <a href="https://maurobenetti.github.io/home" class="genric-btn primary circle arrow">Profile Website<span class="lnr lnr-arrow-right"></span></a> -->
+
+            </div>
+          </div>
+        </div>
+
+        <!-- </li>
+              <p>
+                <h3>My competencies are in the following areas :</h3>
+              <p>
+              
+              </p>
+              <p>
+
+              </p>
+              <p>
+                <h4><b>Data Engineering:</b></h4> SQL and NoSQL Data Base Systems, Microservices and API development, Cloud Technologies Microsoft and SAP, Streaming analytics, Communication protocols
+              </p>
+              <p>
+                <b><h4>Machine Learning:</h4></b> Supervised Learning, Time Series, Recommendation Systems, Classification and Regression, Clustering and Anomaly detection
+              </p>
+              <p>
+                <h4><b>Deep Learning:</b></h4> Image recognition, Object detection, Semantic Text Analysis and Entity Recognition, Text Summarization, 
+              </p>
+              </p>
+              <p>
+                <h4><b>Data Analytics:</b></h4> EDA Exploratory Data Analysis, Descriptive Statistics, Feature Engineering, data preparation, data visualization, storytelling 
+              </p>
+              <p>
+                <h4><b>Software packages:</b></h4> Bash, Linux, Github, Python, R, Knime, DataIku, RapidMiner, Weka, Orange, Rust.
+              </p>
+              <p>
+                <h4><b>Mathematical optimization:</b></h4> Operational Research, Linear and Nonlinear algebra, Probability theory, Mathematical Modeling, Advanced Calculus and Algebra, Montecarlo simulation.
+              </p>
+              <p>
+                                                                          
+              </p>
+              <p>
+                <h3>Software and tecnologies used in my projects</h3>
+              <p>
+          <p class="aligncenter">
+            <img src="img/Imagen2.png" alt="centered image" width="1100" height="287"/>
+          </p>
+      </div> -->
+    </section>
+    <!--================ End About Area =================-->
+
+    <!--================ Start Footer Area =================-->
+    <footer class="footer_area section_gap" id="contact-me">
+      <div class="container">
+        <div class="row footer_inner justify-content-center">
+          <div class="col-lg-6 text-center">
+            <aside class="f_widget social_widget">
+              <div class="f_title">
+                <h3>Let’s get in touch</h3>
+                <!-- <h4>
+                Add me on linkedIn or send me a message!
+                </h4> -->
+              </div>
+              <ul class="list">
+                <li>
+                  <a href="www.linkedin.com/in/ltrangng"
+                    ><i class="fab fa-linkedin"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/ltrangng"
+                    ><i class="fab fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://instagram/letrang_studio" 
+                    ><i class="fab fa-instagram-square"></i
+                  ></a>
+                </li>
+              </ul>
+            </aside>
+            <!-- <div class="copyright">
+              <p>
+                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Esta obra está bajo una <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Licencia Creative Commons Atribución-NoComercial-CompartirIgual 4.0 Internacional</a>.
+              </p> -->
+              <!-- <p> -->
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                <!-- Copyright &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script> -->
+                <!-- All rights reserved | This template is made with
+                <i class="fab fa-heart-o" aria-hidden="true"></i> by
+                <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              <!-- </p> -->
+            <!-- </div> -->
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--================End Footer Area =================-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/stellar.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+    <script src="vendors/isotope/isotope-min.js"></script>
+    <script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/mail-script.js"></script>
+    <!--gmaps Js-->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+    <script src="js/gmaps.min.js"></script>
+    <script src="js/theme.js"></script>
   </body>
 </html>
