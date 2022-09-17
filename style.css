@@ -1,0 +1,468 @@
+@font-face {
+    font-family: 'TradeGothicLTStd-Bold';
+    src: url("../fonts/trade_gothic_lt_std_bold.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothicLTStd';
+    src: url("../fonts/trade_gothic_lt_std.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'TradeGothicLTS-Light';
+    src: url("../fonts/trade_gothic_lt_light.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'din-bold';
+    src: url("../fonts/DIN-Bold.woff.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*
+==============================================
+BASE
+==============================================
+*/
+
+
+body {
+    font-family: 'TradeGothicLTStd', 'Libre Franklin', sans-serif;
+}
+
+a {
+    color: black;
+}
+
+/*
+==============================================
+HEADER
+==============================================
+*/
+
+header {
+    min-height: 150px;
+    margin: auto auto;
+    position: relative;
+}
+
+header .navbar .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 70%;
+}
+
+header .navbar-brand img:hover {
+    opacity: 0.5;
+}
+
+header .navbar .container .nav-item .nav-link {
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: black;
+}
+
+header .navbar .container .nav-item .nav-link:hover {
+    color: gray;
+}
+
+
+/*
+=================================================
+HERO TEXT
+=================================================
+*/
+
+.section-slogan {
+    margin: auto auto;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    width: 70%;
+    position: relative;
+    display: block;
+  }
+
+.section-slogan .container {
+  padding: 50px 0;
+}
+
+
+.section-slogan h1,
+.section-slogan h2 {
+  font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
+  margin: 0;
+}
+
+.section-slogan h1 {
+    font-size: 55px;
+    line-height: 1.15;
+  }
+
+.section-slogan h1 strong {
+  display: block;
+}
+
+.section-slogan h2 {
+    font-size: 19px;
+    letter-spacing: .1em;
+  }
+
+  
+.section-slogan .sub-title {
+  font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
+  max-width: 464px;
+  line-height: 1.8;
+  margin: 24px 0 0 8px;
+  letter-spacing: 0.03em;
+  font-size: 15px;
+}
+
+.section-slogan .sub-title br {
+    display: none;
+  }
+
+
+
+h2 {
+    font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
+}
+
+p {
+    line-height: 1.75rem;
+    font-size: 1.1rem;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.testimonials {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: 85%;
+}
+
+.mybox2 {
+    min-height: 200px;
+    padding: 20px auto;
+    margin: 10px;
+}
+
+.myfooter {
+    max-height: 200px;
+    background-color: white;
+    text-justify: inter-word;
+}
+
+
+/*
+==================================================
+MY WORK
+==================================================
+*/
+
+.my-work {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2px;
+    margin-bottom: 10px;
+    /* max-width: 1440px;
+    width: 100%;
+    min-height: auto; */
+}
+
+.my-item {
+    min-height: auto;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+  
+.my-item:before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+    background: rgba(0, 0, 0, 0.88);
+    opacity: 0;
+    transition: all 300ms ease;
+}
+
+.my-item img {
+    width: 100%;
+    height: 100%;
+    /* display: block;
+    overflow: hidden;
+    position: relative; */
+}
+  
+.my-item .my-title {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    bottom: 0px;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+.my-item .my-title h2 {
+    margin-bottom: 5px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    margin: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+  }
+  
+
+.my-item .my-title h2 {
+    text-align: center;  
+    padding: 10px 0;
+    font-size: 2.75rem;
+}
+
+.my-item .my-title h4 {
+    padding: 50px 0;
+    font-size: 1.2rem;
+}
+
+  
+.my-item:hover:before {
+    opacity: 0.4;
+  }
+  
+.my-item:hover .my-title {
+    opacity: 1;
+    visibility: visible;
+    bottom: 30px;
+  }
+
+/*
+==================================================
+ABOUT
+==================================================
+*/
+
+.about-me {
+    margin: auto auto;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    width: 100%;
+    position: relative;
+ 
+}
+
+.profile-pic {
+    border-radius: 100%;
+    width: 100%;
+    height: auto;
+
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.social_widget .f_title h4 {
+    font-weight: 400;
+    font-size: 1.25rem;
+    margin: auto auto;
+    color: #000;
+  }
+  
+  
+  .social_widget .list li {
+    margin-right: 40px;
+    display: inline-block;
+    padding-top: 20px;
+  }
+  
+  .social_widget .list li a {
+    color: black;
+    font-size: 40px;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    -o-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+  }
+  
+  .social_widget .list li:last-child {
+    margin-right: 0px;
+  }
+  
+  .social_widget .list li:hover a {
+    color: gray;
+  }
+
+.small-text {
+    font-size: 0.85rem;
+}
+
+
+/*
+==================================================
+FOOTER
+==================================================
+*/
+
+footer {
+    margin: 20px auto;
+}
+
+
+.footer a:hover {
+    color: gray;
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 576px) { 
+
+
+ 
+
+
+ 
+ } 
+ 
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 768px) { 
+.section-slogan .container {
+    padding: 40px 0;
+  }
+
+.section-slogan h1 {
+    font-size: 3.5rem;
+    line-height: 1.15;
+  }
+
+.section-slogan h2 {
+    font-size: 19px;
+  }
+
+.section-slogan .sub-title {
+    line-height: 2;
+    font-size: 16px;
+    max-width: 651px;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+
+.section-slogan .container {
+    padding: 75px 0;
+  }
+
+.section-slogan h1 {
+    font-size: 80px;
+  }
+
+.section-slogan h2 {
+    font-size: 22px;
+  }
+
+.section-slogan .sub-title {
+    line-height: 2;
+    font-size: 16px;
+    max-width: 651px;
+  }
+
+.my-item .my-title {
+    bottom: 50px;
+    font-size: 16px;
+}
+
+.my-item .my-title h2,
+.my-item .my-title h4 {
+    padding: 20px 0; 
+}
+
+
+ }
+ 
+
+
+
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+ .section-slogan h1 {
+    font-size: 8.625rem;
+  }
+
+  .section-slogan h2 {
+    font-size: 37px;
+  }
+
+  .section-slogan .sub-title {
+    line-height: 2.4;
+    margin: 24px 0 0 8px;
+    letter-spacing: 0.13em;
+    font-size: 18px;
+  }
+
+  .my-item .my-title h2 {
+    padding: 10px 0; 
+    font-size: 3rem;
+}
+
+.my-item .my-title h4 {
+  padding: 50px 0; 
+}
+
+
+
+ }
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+
+    .my-item .my-title h2 {
+        padding: 10px 0; 
+        font-size: 3.2rem;
+    }
+    
+    .my-item .my-title h4 {
+      padding: 50px 0; 
+    }
+
+ }
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+
+ }
