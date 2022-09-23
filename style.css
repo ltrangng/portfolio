@@ -152,11 +152,11 @@ p {
     width: 85%;
 }
 
-.mybox2 {
+/* .mybox2 {
     min-height: 200px;
     padding: 20px auto;
     margin: 10px;
-}
+} */
 
 .myfooter {
     max-height: 200px;
@@ -335,9 +335,7 @@ ABOUT
   padding-left: 20px;
 }
 
-.small-text {
-    font-size: 0.85rem;
-}
+
 /* 
 .btn-outline-dark {
   border: 2px;
@@ -353,6 +351,22 @@ ABOUT
   color: white;
 
 }
+
+/*
+==================================================
+TESTIMONIALS
+==================================================
+*/
+
+.tbox {
+  padding: 20px;
+}
+
+.tbox p:last-of-type{
+  font-size: 0.8rem;
+
+}
+
 
 /*
 ==================================================
