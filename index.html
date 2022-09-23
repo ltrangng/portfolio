@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icons/favicon.svg" type="image/svg" />
-    <meta name="description" content="Homepage / Online Portfolio of Le Trang Nguyen" />
+    <link rel="shortcut icon" href="icons/favicon.png" type="image/png" />
+    <meta name="description" content="Online Portfolio of Le Trang Nguyen" />
     <title>Trang's</title>
   
     <!--Google Fonts-->
@@ -21,7 +21,8 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
   
     <!-- main css -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css"/>
 
   </head>
 <body>
@@ -30,7 +31,7 @@
     <nav class="navbar navbar-expand-lg mx-auto my-auto pt-5">
       <div class="container">    
         <a class="navbar-brand nav-link active float-left" aria-current="page" href="index.html">
-          <img src="img/studio-logo@2x.png" alt="logo" width="auto" height="90px">
+          <img src="img/studio-logo.png" alt="logo" width="auto" height="100px">
           </a>
   
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -75,7 +76,7 @@
 <section id="my-work" class="grid  row row-cols-2 my-work g-0 text-white">
   <div class="col-12 col-md-6 col-lg-4">
    <div class="my-item">
-    <a href="#"><img src="img/2203-homepage@2x.jpg" height="420px" width="420px" class="border img-fluid" alt="Low-fidelity Wireframe of Web Design"></a>
+    <a href="homemade-page.html"><img src="img/2203-homepage@2x.jpg" height="420px" width="420px" class="border img-fluid" alt="Low-fidelity Wireframe of Web Design"></a>
     <div class="my-title">
       <h2 class="fs-2">HOMEMADE-PAGE</h2>
       <h4>WEB DESIGN</h4>
@@ -140,52 +141,44 @@
     <section class="row about-me m-5">
       <div class="col-12 col-md-5 col-lg-4 px-4 float-start">
 
-        <div class="row"><img src="img/profile@2x.jpg" width="320" height="auto" class="profile-pic center"></div>
+        <div class="row"><img src="img/profile@2x.jpg" width="240px" height="auto" class="profile-pic center"></div>
 
 
 
-        <div class="row py-5 text-center f_widget social_widget text-center">
- 
-            <div class="f_title">
-              <h3>Contact me</h3>
+        <div class="row py-5 f_widget social_widget text-center">
+            <div class="f_title container">
+              <h4></h4>
             </div>
-            <ul class="list">
-              <li>
-                <a href="#">
-                  <i class="fa-solid fa-envelope"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.linkedin.com/in/ltrangng/">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-square-instagram"></i>
-                </a>
-              </li>
-            </ul>
+            <div class="container">
+              <button type="button" class="btn btn-outline-dark btn-lg">
+                <a href="misc/Letrang_resume_2022.pdf">Download my résumé</a></button>
+              <!-- <h4>CONTACT ME</h4>
+
+                  <div class="list">
+                    <a href="https://www.linkedin.com/in/ltrangng/">
+                      <i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://www.instagram.com/letrang_studio/">
+                      <i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.behance.net/trangng53">
+                      <i class="fa-brands fa-behance"></i></a>
+                  </div> -->
+            
+              
+            </div>
 
         </div>
       </div>
-      <div class="col-12 col-md-7 col-lg-8 my-text px-5">
-        <p>I was a low-tech tree hugger.</p>
-        
+      <div class="col-12 col-md-7 col-lg-8 my-text px-4">
+        <p>I was a low-tech tree hugger.</p>        
         <p>I love the land and want to see great things growing from it. That’s why I became a landscape architect.</p>
         <p>I grew up in Vietnam without the internet. There was no access to computers. There was even scanty food or
           medicines. Vietnamese who were born before the border was open in 1986 are often seen smaller. That’s how I
           could see things that big people often miss.</p>
-        <p>I wanted to see the world, so I traveled. My first trips were on scooter around the country with a map book.
-          That was before Google and Facebook. Later I couchsurfed in 25 countries with my smartphone. I love talking
-          with people and learning about their life, their culture, asking about their dreams. That's when I started seeing the
-          limitation of my work. Landscape projects are tied to a physical place and can only be accessed by the
-          people in the region.</p>
+        <p>I wanted to see the world, so I traveled. My first trips were on my scooter with a map book along Vietnam. That was before Google and Facebook. Later I couchsurfed in 25 countries with just my smartphone. I like talking with people and learning about their life, their culture, asking about their dreams. That's when I started seeing the lmitation of my work. Landscape projects are tied to a physical place and can only be accessed by the people in the region.</p>
         <p>The world has changed greatly since the day I hopped on my scooter. How much I love the simplicity of an
           analog life, I see the endless possibilities of reaching out to people using digital tools. My work has
           shifted from the built environment to its virtual infrastructure.</p>
-          <p>What hasn't changed is my interests towards different communities, my human-centric design philosophy, and my code of ethics. As a UX Designer, I stand on
-          the frontline of defending the users. </p>
+        <p>What hasn't changed is my interests in different communities, my human-centric design philosophy, and my code of ethics. As a UX Designer, I stand on the frontline of defending the users. </p>
       </div>
     </section>
   </div>

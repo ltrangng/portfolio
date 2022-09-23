@@ -85,8 +85,8 @@ HERO TEXT
 
 .section-slogan {
     margin: auto auto;
-    padding-top: 90px;
-    padding-bottom: 90px;
+    padding-top: 75px;
+    padding-bottom: 75px;
     width: 70%;
     position: relative;
     display: block;
@@ -105,7 +105,7 @@ HERO TEXT
 
 .section-slogan h1 {
     font-size: 55px;
-    line-height: 1.15;
+    line-height: 1.1;
   }
 
 .section-slogan h1 strong {
@@ -120,8 +120,8 @@ HERO TEXT
   
 .section-slogan .sub-title {
   font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
-  max-width: 464px;
-  line-height: 1.8;
+  max-width: 29rem;
+  line-height: 1.6;
   margin: 24px 0 0 8px;
   letter-spacing: 0.03em;
   font-size: 15px;
@@ -138,7 +138,7 @@ h2 {
 }
 
 p {
-    line-height: 1.75rem;
+    line-height: 1.6;
     font-size: 1.1rem;
     text-align: justify;
     text-justify: inter-word;
@@ -276,7 +276,7 @@ ABOUT
     margin: auto auto;
     padding-top: 75px;
     padding-bottom: 75px;
-    width: 100%;
+    width: 80%;
     position: relative;
  
 }
@@ -288,29 +288,34 @@ ABOUT
 
 }
 
-.center {
+/* .center {
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
 .social_widget .f_title h4 {
     font-weight: 400;
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin: auto auto;
     color: #000;
   }
   
   
-  .social_widget .list li {
-    margin-right: 40px;
+  .social_widget .list a i {
+    margin: 0;
     display: inline-block;
+    justify-content: space-between;
     padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 2rem;
   }
   
-  .social_widget .list li a {
+  .social_widget .list a {
     color: black;
-    font-size: 40px;
+    font-size: 32px;
     -webkit-transition: all 0.4s ease 0s;
     -moz-transition: all 0.4s ease 0s;
     -o-transition: all 0.4s ease 0s;
@@ -325,10 +330,28 @@ ABOUT
     color: gray;
   }
 
+.my-text {
+  line-height: 1;
+}
+
 .small-text {
     font-size: 0.85rem;
 }
+/* 
+.btn-outline-dark {
+  border: 2px;
+} */
 
+.btn a {
+  text-decoration: none;
+}
+
+.btn a:hover,
+.btn-outline-dark:hover,
+.btn-lg {
+  color: white;
+
+}
 
 /*
 ==================================================
