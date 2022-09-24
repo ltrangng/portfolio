@@ -264,6 +264,7 @@ MY WORK
     opacity: 1;
     visibility: visible;
     bottom: 30px;
+    color: white;
   }
 
 /*
@@ -345,12 +346,12 @@ ABOUT
   text-decoration: none;
 }
 
-.btn a:hover,
+/* .btn a:hover,
 .btn-outline-dark:hover,
 .btn-lg {
   color: white;
 
-}
+} */
 
 /*
 ==================================================
@@ -381,6 +382,10 @@ footer {
 
 .footer a:hover {
     color: gray;
+}
+
+.footer p {
+  text-align: center;
 }
 
 /* X-Small devices (portrait phones, less than 576px) */
