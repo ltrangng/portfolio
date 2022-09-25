@@ -143,7 +143,7 @@
       scale: 0,
       distance: '0',
       easing: 'ease-in-out',
-      delay: 2500,
+      delay: 2100,
       afterReveal: function() {
         document.querySelector('.front .site-header .logo').classList.add('show');
         document.querySelector('.front .site-header .btn-nav').classList.add('show');
