@@ -41,12 +41,35 @@ BASE
 	z-index: 999;
 }
 
+/* .my-icon {
+  color: white;
+  font-size: 1.5rem;
+  text-align: center
+}
+
+
+#contact{
+  position: fixed;
+  right: 0px;
+  z-index: 999;
+  background-color: gray;
+  opacity: 0.7;
+  width: 50px;
+  height: 92px;
+  top: 30vh;
+} */
+
+
 body {
     font-family: 'TradeGothicLTStd', 'Libre Franklin', sans-serif;
 }
 
 a {
     color: black;
+}
+
+a:hover {
+  color: gray;
 }
 
 /*
