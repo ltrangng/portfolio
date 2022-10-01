@@ -439,6 +439,9 @@ footer {
   }
 
 
+  
+
+}
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
@@ -474,10 +477,15 @@ footer {
   padding-left: 30px;
  }
 
+ .navbar .navbar-brand img {
+  width: auto;
+  height: 100px;
+}
+
 }
 
 
- }
+ 
  
 
 
