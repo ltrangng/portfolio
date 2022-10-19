@@ -1366,6 +1366,10 @@ textarea.form-control {
   width: 100%;
 }
 
+.screen img {
+  border: 1px gray;
+}
+
 #prototype-final {
   padding-top: 40px;
 }
