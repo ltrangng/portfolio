@@ -20,10 +20,17 @@
 }
 
 @font-face {
-    font-family: 'din-bold';
-    src: url("../fonts/DIN-Bold.woff.woff") format("woff");
+    font-family: 'FuturaLT';
+    src: url("../fonts/FuturaLT.woff") format("woff"), url("../fonts/FuturaLT.woff2") format("woff2"); 
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaLT-Light';
+  src: url("../fonts/FuturaLT-Light.woff") format("woff"), url("../fonts/FuturaLT-Light.woff2") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
 }
 
 
@@ -42,7 +49,8 @@ BASE
 }
 
 body {
-    font-family: 'TradeGothicLTStd', 'Libre Franklin', sans-serif;
+    font-family: 'FuturaLT', 'Lato', sans-serif;
+    font-size: 16px;
 }
 
 a {
@@ -60,7 +68,7 @@ HEADER
 */
 
 header {
-    min-height: 150px;
+    min-height: 120px;
     margin: auto auto;
     position: relative;
 }
@@ -70,7 +78,7 @@ header .navbar .container {
     margin-left: auto;
     padding-left: 0;
     padding-right: 0;
-    width: 70%;
+    width: 65%;
 }
 
 header .navbar-brand img:hover {
