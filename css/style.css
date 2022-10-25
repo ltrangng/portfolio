@@ -234,10 +234,16 @@ MY WORK
 .my-item img {
   width: 100%;
   height: 100%;
-  /* display: block;
-  overflow: hidden;
-  position: relative; */
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
+
+.my-item img:hover {
+  filter: none;
+  -webkit-filter: grayscale(0%);
+}
+
+
 
 .my-item .my-title {
   position: absolute;
