@@ -422,21 +422,110 @@ TESTIMONIALS
 ==================================================
 */
 
-.tbox {
+/* .tbox {
 padding: 20px;
 }
 
 .tbox p:last-of-type{
 font-size: 0.8rem;
 
-}
+} */
 
 .testimonials {
   margin-right: auto;
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  width: 85%;
+  width: 90%;
+}
+
+figure.tbox {
+  position: relative;
+  margin: 10px;
+  min-width: 240px;
+  max-width: 300px;
+  width: 100%;
+  color: white;
+  opacity: 0.9;
+  text-align: left;
+  font-size: 1rem;
+font-family: 'FuturaLT-Light', 'Lato', sans-serif;
+  box-shadow: none !important;
+}
+
+figure.tbox * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+figure.tbox img {
+  max-width: 100%;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  border: 2px solid lightgray;
+  display: block;
+  z-index: 1;
+}
+
+figure.tbox blockquote {
+  margin: 0;
+  display: block;
+  /* border-radius: 8px; */
+  position: relative;
+  background-color: transparent;
+  /* border: 2x solid white; */
+  padding: 30px 20px 25px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0;
+  line-height: 1.6;
+  /* box-shadow: 0 0 5px rgba(218, 218, 218, 0.15); */
+}
+
+figure.tbox blockquote:before,
+figure.tbox blockquote:after {
+  position: absolute;
+  font-size: 50px;
+  opacity: 0.3;
+  font-style: normal;
+}
+figure.tbox blockquote:before {
+  top: 35px;
+  left: 20px;
+}
+figure.tbox blockquote:after {
+  /* content: "\201D"; */
+  right: 20px;
+  bottom: 35px;
+}
+figure.tbox .author {
+  margin: 0;
+  height: 80px;
+  display: block;
+  text-align: left;
+  color: #ffffff;
+  padding: 0 25px;
+  position: relative;
+}
+figure.tbox .author h5,
+figure.tbox .author span {
+  left: 35%;
+  position: absolute;
+  opacity: 0.8;
+  padding: 3px 5px;
+}
+figure.tbox .author h5 {
+  text-transform: uppercase;
+  bottom: 50%;
+  margin: 0;
+  font-weight: 700;
+  color: white;
+}
+figure.tbox .author span {
+  font-size: 0.8em;
+  color: #ffffff;
+  opacity: 0.9;
+  top: 50%;
 }
 
 
@@ -525,6 +614,19 @@ RESPONSIVE
   height: 60px;
 }
 
+#services {
+  width: 100%;
+ }
+
+.testimonials {
+  width: 80%;
+}
+
+.tablet-hidden {
+  display: none;
+}
+
+
 
 }
 /* Medium devices (tablets, 768px and up) */
@@ -577,6 +679,18 @@ height: 100px;
   height: 70px;
 }
 
+#services {
+  width: 100%;
+ }
+
+ .testimonials {
+  width: 95%;
+}
+
+.tablet-hidden {
+  display: none;
+}
+
 }
 
 
@@ -627,6 +741,25 @@ padding-left: 50px;
   height: 60px;
 }
 
+#services {
+  width: 85%;
+  margin: auto;
+ }
+ .testimonials {
+  width: 95%;
+}
+
+figure.tbox {
+  
+  margin: 0px;
+  min-width: 240px;
+  max-width: 300px;
+}
+
+.tablet-hidden {
+  display: block;
+}
+
 }
 
 /* X-Large devices (large desktops, 1200px and up) */
@@ -661,10 +794,27 @@ padding-left: 50px;
   
   }
 
+  .testimonials {
+    width: 80%;
+  }
+
 }
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
 
+  .testimonials {
+    width: 70%;
+  }
+
+
+  figure.tbox {
+    position: relative;
+    margin: 10px;
+    min-width: 280px;
+    max-width: 320px;
+    width: 100%;
+
+  
 }
