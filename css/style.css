@@ -1,36 +1,50 @@
 @font-face {
-    font-family: 'TradeGothicLTStd-Bold';
-    src: url("../fonts/trade_gothic_lt_std_bold.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TradeGothicLTStd';
-    src: url("../fonts/trade_gothic_lt_std.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'TradeGothicLTS-Light';
-    src: url("../fonts/trade_gothic_lt_light.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'FuturaLT';
-    src: url("../fonts/FuturaLT.woff") format("woff"), url("../fonts/FuturaLT.woff2") format("woff2"); 
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-  font-family: 'FuturaLT-Light';
-  src: url("../fonts/FuturaLT-Light.woff") format("woff"), url("../fonts/FuturaLT-Light.woff2") format("woff2"); 
+  font-family: 'TradeGothicLTStd-Bold';
+  src: url("../fonts/trade_gothic_lt_std_bold.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothicLTStd';
+  src: url("../fonts/trade_gothic_lt_std.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TradeGothicLTS-Light';
+  src: url("../fonts/trade_gothic_lt_light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'din-bold';
+  src: url("../fonts/DIN-Bold.woff.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FuturaLT';
+  src: url("../fonts/FuturaLT.woff") format("woff"), url("../fonts/FuturaLT.woff2") format("woff2"); 
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+font-family: 'FuturaLT-Light';
+src: url("../fonts/FuturaLT-Light.woff") format("woff"), url("../fonts/FuturaLT-Light.woff2") format("woff2"); 
+font-weight: thin;
+font-style: normal;
+}
+
+@font-face {
+font-family: 'FuturaLT-Heavy';
+src: url("../fonts/FuturaLT-Light.woff") format("woff"), url("../fonts/FuturaLT-Light.woff2") format("woff2"); 
+font-weight: bold;
+font-style: normal;
 }
 
 
@@ -48,18 +62,33 @@ BASE
 	z-index: 999;
 }
 
+
 body {
-    font-family: 'FuturaLT', 'Lato', sans-serif;
-    font-size: 16px;
+  font-family: 'FuturaLT', 'Lato', sans-serif;
+  font-size: 16px;
 }
 
 a {
-    color: black;
+  color: black;
 }
 
 a:hover {
-  color: gray;
+color: gray;
 }
+
+
+h2 {
+  font-family: 'TradeGothicLTStd-Bold', 'Lato', sans-serif;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+
 
 /*
 ==============================================
@@ -68,33 +97,43 @@ HEADER
 */
 
 header {
-    min-height: 120px;
-    margin: auto auto;
-    position: relative;
+  min-height: 150px;
+  margin: auto auto;
+  position: relative;
 }
 
 header .navbar .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    width: 65%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 70%;
 }
 
 header .navbar-brand img:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 header .navbar .container .nav-item .nav-link {
-    font-weight: 700;
-    font-size: 1.15rem;
-    color: black;
+  font-family: 'TradeGothicLTStd', 'FuturaLT-Heavy', sans-serif;
+  font-weight: 700;
+  font-size: 1.15rem;
+  color: black;
 }
 
 header .navbar .container .nav-item .nav-link:hover {
-    color: gray;
+  color: gray;
 }
 
+header .navbar .container .nav-item .nav-link:active {
+  text-decoration: underline;
+}
+
+.my-logo {
+  height: 40px;
+  width: auto;
+  
+}
 
 /*
 =================================================
@@ -103,85 +142,54 @@ HERO TEXT
 */
 
 .section-slogan {
-    margin: auto auto;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    width: 70%;
-    position: relative;
-    display: block;
-  }
+  margin: auto auto;
+  padding-top: 75px;
+  padding-bottom: 75px;
+  width: 70%;
+  position: relative;
+  display: block;
+}
 
 .section-slogan .container {
-  padding: 50px 0;
+padding: 50px 0;
 }
 
 
 .section-slogan h1,
 .section-slogan h2 {
-  font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
-  margin: 0;
+font-family: 'TradeGothicLTStd-Bold', 'Lato', sans-serif;
+margin: 0;
 }
 
 .section-slogan h1 {
-    font-size: 55px;
-    line-height: 1.1;
-  }
+  font-size: 55px;
+  line-height: 1.1;
+}
 
 .section-slogan h1 strong {
-  display: block;
+display: block;
 }
 
 .section-slogan h2 {
-    font-size: 19px;
-    letter-spacing: .1em;
-  }
+  font-size: 19px;
+  letter-spacing: .1em;
+}
 
-  
+
 .section-slogan .sub-title {
-  font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
-  max-width: 29rem;
-  line-height: 1.6;
-  margin: 24px 0 0 8px;
-  letter-spacing: 0.03em;
-  font-size: 15px;
+font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
+max-width: 29rem;
+line-height: 1.6;
+margin: 24px 0 0 8px;
+letter-spacing: 0.03em;
+font-size: 15px;
 }
 
 .section-slogan .sub-title br {
-    display: none;
-  }
-
-
-
-h2 {
-    font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
+  display: none;
 }
 
-p {
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: justify;
-    text-justify: inter-word;
-}
 
-.testimonials {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 0;
-    padding-right: 0;
-    width: 85%;
-}
-
-/* .mybox2 {
-    min-height: 200px;
-    padding: 20px auto;
-    margin: 10px;
-} */
-
-.myfooter {
-    max-height: 200px;
-    background-color: white;
-    text-justify: inter-word;
-}
 
 /*
 ==================================================
@@ -190,100 +198,154 @@ MY WORK
 */
 
 .my-work {
-    margin-right: auto;
-    margin-left: auto;
-    padding: 2px;
-    margin-bottom: 10px;
-    /* max-width: 1440px;
-    width: 100%;
-    min-height: auto; */
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2px;
+  margin-bottom: 10px;
+  max-width: 1440px;
+  width: 100%;
+  min-height: auto; 
 }
 
 .my-item {
-    min-height: auto;
-    top: 0;
-    left: 0;
-    padding: 3px;
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
+  min-height: auto;
+  top: 0;
+  left: 0;
+  padding: 3px;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
 }
 
-  
+
 .my-item:before {
-    content: "";
-    position: absolute;
-    top: 2px;
-    right: 2px;
-    bottom: 2px;
-    left: 2px;
-    background: rgba(0, 0, 0, 0.88);
-    opacity: 0;
-    transition: all 300ms ease;
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  background: rgba(0, 0, 0, 0.88);
+  opacity: 0;
+  transition: all 300ms ease;
 }
 
 .my-item img {
-    width: 100%;
-    height: 100%;
-    /* display: block;
-    overflow: hidden;
-    position: relative; */
+  width: 100%;
+  height: 100%;
+  /* display: block;
+  overflow: hidden;
+  position: relative; */
 }
-  
+
 .my-item .my-title {
-    position: absolute;
-    width: 100%;
-    left: 50%;
-    bottom: 0px;
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    transform: translateX(-50%);
-    text-align: center;
-    opacity: 0;
-    visibility: hidden;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-  }
-  
-.my-item .my-title h2 {
-    margin-bottom: 5px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-    margin: 10px;
-    vertical-align: middle;
-    cursor: pointer;
-  }
-  
+  position: absolute;
+  width: 100%;
+  left: 50%;
+  bottom: 0px;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
 
 .my-item .my-title h2 {
-    text-align: center;  
-    padding: 10px 0;
-    font-size: 2.75rem;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+  margin: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+
+.my-item .my-title h2 {
+  text-align: center;  
+  padding: 10px 0;
+  font-size: 2.75rem;
 }
 
 .my-item .my-title h4 {
-    padding: 50px 0;
-    font-size: 1.2rem;
+  padding: 50px 0;
+  font-size: 1.2rem;
 }
 
-  
+
 .my-item:hover:before {
-    opacity: 0.4;
-  }
-  
+  opacity: 0.4;
+}
+
 .my-item:hover .my-title {
-    opacity: 1;
-    visibility: visible;
-    bottom: 30px;
-    color: white;
+  opacity: 1;
+  visibility: visible;
+  bottom: 30px;
+  color: white;
+}
+
+/*
+==================================================
+SERVICES
+==================================================
+*/
+
+#services {
+   padding: 20px 60px;
+   margin: auto auto;
+   display: block;
+   width: 70%;
   }
+
+
+.service{
+	border: 1px solid lightgray;
+	margin-top: 20px;
+	margin-bottom: 50px;
+	transition: all 0.3s;
+	position: relative;
+	padding: 50px 10px;
+}
+
+
+
+.service:hover{
+	border-color: gray;
+	margin-top: 0px;
+	margin-bottom: 0px;
+	cursor: pointer;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#services h3 {
+  font-family: 'TradeGothicLTS-Light';
+  font-weight: bolder;
+  text-transform: uppercase;
+  line-height: 1.5;
+  letter-spacing: 1.1;
+}
+.service p {
+	font-size: 14px;
+	padding-top: 20px;
+	font-family: 'FuturaLT', 'Lato', sans-serif;
+  color: lightgray;
+}
+
+.space { 
+  padding-top: 40px; 
+}
+
+
 
 /*
 ==================================================
@@ -292,79 +354,67 @@ ABOUT
 */
 
 .about-me {
-    margin: auto auto;
-    padding-top: 75px;
-    padding-bottom: 75px;
-    width: 80%;
-    position: relative;
- 
+  margin: auto auto;
+  padding-top: 100px;
+  padding-bottom: 75px;
+  width: 80%;
+  position: relative;
+
 }
 
 .profile-pic {
-    border-radius: 100%;
-    width: 100%;
-    height: auto;
-
+  border-radius: 100%;
+  width: 80%;
+  height: auto;
+  display: block;
+  z-index: 2;
+  position: relative;
+ 
 }
-  
+
+
 .social_widget .f_title h4 {
-  font-family: 'Amatic SC', cursive;
-  font-weight: 700;
-  font-size: 2rem;
-  margin: auto auto;
-  color: #000;
-  padding-top: 10px;
-  }
-  
-  .social_widget .list a i {
-    margin: 0;
-    display: inline-block;
-    justify-content: space-between;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    font-size: 2.2rem;
-    text-decoration: none;
-  }
-  
-  .social_widget .list a {
-    color: black;
-    font-size: 32px;
-    -webkit-transition: all 0.4s ease 0s;
-    -moz-transition: all 0.4s ease 0s;
-    -o-transition: all 0.4s ease 0s;
-    transition: all 0.4s ease 0s;
-  }
-  
-  .social_widget .list li:last-child {
-    margin-right: 0px;
-  }
-  
-  .social_widget .list a:hover {
-    color: gray;
-  }
-
-.my-text {
-  line-height: 1;
+font-family: 'Amatic SC', cursive;
+font-weight: 700;
+font-size: 2rem;
+margin: auto auto;
+color: #000;
+padding-top: 10px;
 }
 
-
-/* 
-.btn-outline-dark {
-  border: 2px;
-} */
-
-.btn a {
+.social_widget .list a i {
+  margin: 0;
+  display: inline-block;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 2.2rem;
   text-decoration: none;
 }
 
-/* .btn a:hover,
-.btn-outline-dark:hover,
-.btn-lg {
-  color: white;
+.social_widget .list a {
+  color: black;
+  font-size: 32px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
 
-} */
+.social_widget .list li:last-child {
+  margin-right: 0px;
+}
+
+.social_widget .list a:hover {
+  color: gray;
+}
+
+.my-text {
+line-height: 1;
+}
+
 
 /*
 ==================================================
@@ -373,13 +423,23 @@ TESTIMONIALS
 */
 
 .tbox {
-  padding: 20px;
+padding: 20px;
 }
 
 .tbox p:last-of-type{
-  font-size: 0.8rem;
+font-size: 0.8rem;
 
 }
+
+.testimonials {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0;
+  width: 85%;
+}
+
+
 
 
 /*
@@ -389,8 +449,8 @@ IMPRESSUM
 */
 
 .impressum {
-  width: 70%;
-  
+width: 70%;
+
 }
 
 
@@ -401,100 +461,127 @@ FOOTER
 */
 
 footer {
-    margin: 20px auto;
+  margin: 20px auto;
 }
+
+.myfooter {
+  max-height: 200px;
+  background-color: white;
+  text-justify: inter-word;
+}
+
 
 
 .footer a:hover {
-    color: gray;
+  color: gray;
 }
 
 .footer p {
-  text-align: center;
+text-align: center;
 }
+
+/*
+==================================================
+RESPONSIVE
+==================================================
+*/
 
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
 
 
- 
+} 
 
-
- 
- } 
- 
 /* No media query for `xs` since this is the default in Bootstrap */
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) { 
 .section-slogan .container {
-    padding: 40px 0;
-  }
+  padding: 40px 0;
+}
 
 .section-slogan h1 {
-    font-size: 3.5rem;
-    line-height: 1.15;
-  }
+  font-size: 3.5rem;
+  line-height: 1.15;
+}
 
 .section-slogan h2 {
-    font-size: 19px;
-  }
+  font-size: 19px;
+}
 
 .section-slogan .sub-title {
-    line-height: 2;
-    font-size: 16px;
-    max-width: 651px;
-  }
+  line-height: 2;
+  font-size: 16px;
+  max-width: 651px;
+}
 
+.profile-pic {
+  width: 60%;
+  height: auto;
+}
 
-  
+.my-logo {
+  width: auto;
+  height: 60px;
+}
+
 
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
 
 .section-slogan .container {
-    padding: 75px 0;
-  }
+  padding: 75px 0;
+}
 
 .section-slogan h1 {
-    font-size: 80px;
-  }
+  font-size: 80px;
+}
 
 .section-slogan h2 {
-    font-size: 22px;
-  }
+  font-size: 22px;
+}
 
 .section-slogan .sub-title {
-    line-height: 2;
-    font-size: 16px;
-    max-width: 651px;
-  }
+  line-height: 2;
+  font-size: 16px;
+  max-width: 651px;
+}
 
 .my-item .my-title {
-    bottom: 50px;
-    font-size: 16px;
+  bottom: 50px;
+  font-size: 16px;
 }
 
 .my-item .my-title h2,
 .my-item .my-title h4 {
-    padding: 20px 0; 
+  padding: 20px 0; 
 }
 
 .my-text {
-  padding-left: 30px;
- }
+padding-left: 30px;
+}
 
- .navbar .navbar-brand img {
+.navbar .navbar-brand img {
+width: auto;
+height: 100px;
+}
+
+.profile-pic {
+  width: 40%;
+  height: auto;
+}
+
+.my-logo {
   width: auto;
-  height: 100px;
+  height: 70px;
 }
 
 }
 
 
- 
- 
+
+
 
 
 
@@ -502,56 +589,82 @@ footer {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
- .section-slogan h1 {
-    font-size: 8.625rem;
-  }
+.section-slogan h1 {
+  font-size: 8.625rem;
+}
 
-  .section-slogan h2 {
-    font-size: 37px;
-  }
+.section-slogan h2 {
+  font-size: 37px;
+}
 
-  .section-slogan .sub-title {
-    line-height: 2.4;
-    margin: 24px 0 0 8px;
-    letter-spacing: 0.13em;
-    font-size: 18px;
-  }
+.section-slogan .sub-title {
+  line-height: 2.4;
+  margin: 24px 0 0 8px;
+  letter-spacing: 0.13em;
+  font-size: 18px;
+}
 
-  .my-item .my-title h2 {
-    padding: 10px 0; 
-    font-size: 3rem;
+.my-item .my-title h2 {
+  padding: 10px 0; 
+  font-size: 3rem;
 }
 
 .my-item .my-title h4 {
-  padding: 50px 0; 
+padding: 50px 0; 
 }
 
 .my-text {
-  padding-left: 50px;
- }
+padding-left: 50px;
+}
 
+.profile-pic {
+  width: 90%;
+  height: auto;
+}
 
- }
+.my-logo {
+  width: auto;
+  height: 60px;
+}
+
+}
 
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
-    .my-item .my-title h2 {
-        padding: 10px 0; 
-        font-size: 3.2rem;
-    }
-    
-    .my-item .my-title h4 {
-      padding: 50px 0; 
-    }
+  .my-item .my-title h2 {
+      padding: 10px 0; 
+      font-size: 3.2rem;
+  }
+  
+  .my-item .my-title h4 {
+    padding: 50px 0; 
+  }
 
-    .my-text {
-      padding-left: 60px;
-     }
+  .my-text {
+    padding-left: 60px;
+   }
 
- }
+   .profile-pic {
+    width: 60%;
+    height: auto;
+  }
+
+  .my-logo {
+    width: auto;
+    height: 40px;
+  }
+
+  .my-logo {
+    height: 80px;
+    width: auto;
+  
+  }
+
+}
+
 
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
 
- }
+}
