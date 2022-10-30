@@ -1339,6 +1339,7 @@ a:hover .overlay {
   padding: 4px;
 }
 
+
 .screenshots-carousel .shot a.zoom {
   display: block;
 }
@@ -1346,12 +1347,15 @@ a:hover .overlay {
 .screenshots-carousel .shot a img {
   border-radius: 3px;
   width: 100%;
+  margin: auto;
+  justify-content: center;
 }
 
 .screen img {
   border: 1px solid lightgray;
 
 }
+
 
 #screenshots-section h4 {
   padding-bottom: 20px;
@@ -1381,7 +1385,7 @@ a:hover .overlay {
 
 #prototype-final {
   position: relative;
-  background: url('../img/2101-argentina.png') center top;
+  background: url('../img/2102-plutopay/2102-argentina.png') center top;
   padding: 80px 0!important;
   background-size: cover;
   padding-top: 20px;
