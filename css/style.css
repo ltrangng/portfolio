@@ -350,7 +350,7 @@ SERVICES
 }
 
 .section-title {
-  width: 50%;
+  width: 100%;
   margin: auto;
 }
 
@@ -429,15 +429,6 @@ line-height: 1;
 TESTIMONIALS
 ==================================================
 */
-
-/* .tbox {
-padding: 20px;
-}
-
-.tbox p:last-of-type{
-font-size: 0.8rem;
-
-} */
 
 .testimonials {
   margin-right: auto;
@@ -626,6 +617,13 @@ RESPONSIVE
   width: 100%;
  }
 
+ .section-title {
+  width: 85%;
+  margin: auto;
+}
+
+
+
 .testimonials {
   width: 80%;
   margin:
@@ -677,6 +675,13 @@ padding-left: 30px;
 width: auto;
 height: 100px;
 }
+
+.section-title {
+  width: 70%;
+  margin: auto;
+}
+
+
 
 .profile-pic {
   width: 40%;
@@ -754,6 +759,13 @@ padding-left: 50px;
   width: 85%;
   margin: auto;
  }
+
+ .section-title {
+  width: 65%;
+  margin: auto;
+}
+
+
  .testimonials {
   width: 95%;
 }
@@ -807,6 +819,11 @@ figure.tbox {
     width: 80%;
   }
 
+  .section-title {
+    width: 50%;
+    margin: auto;
+  }
+
 }
 
 
@@ -816,6 +833,13 @@ figure.tbox {
   .testimonials {
     width: 80%;
   }
+
+  .section-title {
+    width: 50%;
+    margin: auto;
+  }
+  
+  
 
 
   figure.tbox {
