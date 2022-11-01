@@ -960,11 +960,12 @@ address {
 .col-xs-10,
 .col-xs-11,
 .col-xs-12 {
-    float: left
+    float: none
 }
 
 .col-xs-12 {
-    width: 100%
+    width: 100%;
+    margin: auto;
 }
 
 .col-xs-11 {

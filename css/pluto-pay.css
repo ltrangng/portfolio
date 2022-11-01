@@ -786,7 +786,7 @@ DEFINE
 */
 
 #banner-services {
-  background: url('../img/2101-inflation-map.png') center top;
+  background: url('../img/2102-plutopay/2102-inflation-map.png') center top;
   position: relative;
   border-bottom: 1px solid transparent;
   background-size: cover;
@@ -982,7 +982,7 @@ Usability Testing
 */
 
 #testing {
-  background: url('../img/2102-usability-testing.png') center top;
+  background: url('../img/2102-plutopay/2102-usability-testing.png') center top;
   position: relative;
   border-bottom: 1px solid transparent;
   background-size: cover;
@@ -1023,8 +1023,7 @@ Usability Testing
 }
 
 .mifi {
-  margin-right: 100px;
-  text-align: right;
+  margin: auto;
   opacity: 0.9;
 }
 
@@ -1230,75 +1229,10 @@ a:hover .overlay {
 }
 
 .landing-hero {
-  background: url('../img/2101-landing.jpg');
+  background: url('../img/2102-plutopay/2102-landing.jpg');
   background-size: cover;
 }
 
-
-/*--------------------
-  Video section
-----------------------*/
-
-#video-section {
-  background: url('../images/temp/tweet-bg.jpg') center top;
-  position: relative;
-  padding: 100px 0;
-}
-
-#video-section:before {
-  position: absolute;
-  content: '';
-  top: 0;
-  left: 0;
-  background: black;
-  opacity: .9;
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-}
-
-#video-section .container {
-  position: relative;
-  z-index: 3;
-}
-
-#video-section .video-section-content a {
-  display: block;
-  width: 80px;
-  height: 80px;
-  margin: 0 auto 20px;
-  border: 3px solid rgba(255,255,255, .93);
-  text-align: center;
-  line-height: 78px;
-  font-size: 28px;
-  color: rgba(255,255,255, .93);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-}
-
-#video-section .video-section-content a .fa-play {
-  position: relative;
-  left: 4px;
-}
-
-.video-head {
-  font-size: 38px;
-  font-weight: 500;
-  line-height: 1.3;
-  text-align: center;
-  color: #fff;
-  padding-bottom: 7px;
-}
-
-.video-sub-heading {
-  font-size: 20px;
-  font-weight: 300;
-  text-align: center;
-  line-height: 1.3;
-  opacity: .9;
-  color: #fff;
-}
 
 /*--------------------
   Offer section
@@ -1331,12 +1265,15 @@ a:hover .overlay {
   Screenshots
 ----------------------*/
 
+
 #screenshots-section .title-section {
-  padding-bottom: 40px;
+  padding-bottom: 30px;
 }
+
 
 .screenshots-carousel .shot {
   padding: 4px;
+  margin: auto;
 }
 
 
@@ -1346,8 +1283,6 @@ a:hover .overlay {
 
 .screenshots-carousel .shot a img {
   border-radius: 3px;
-  width: 100%;
-  margin: auto;
   justify-content: center;
 }
 
@@ -1361,12 +1296,14 @@ a:hover .overlay {
   padding-bottom: 20px;
 }
 
-#screenshots-section p{
+#screenshots-section p {
   text-align: justify;
+  padding-top: 16px;
 }
 
 #screenshots-section li {
   font-family: 'FuturaLT', 'Lato', sans-serif;
+  margin-left: 20px;
 }
 
 
@@ -1409,14 +1346,24 @@ a:hover .overlay {
 }
 
 #prototype-final .banner-content {
-  margin-left:100px;
+  margin: auto;
+  padding-bottom: 80px;
 }
 
 
 #prototype-final p, ul li {
   color: white;
-  opacity: 0.9;
+  opacity: 0.8;
   font-size: 14px;
+}
+
+
+
+#prototype-final img {
+  margin: 0 auto;
+  padding-bottom: 20px;
+  width: 300px;
+  height: auto;
 }
 
 
@@ -1487,13 +1434,17 @@ footer {
 /* RESPONSIVE */
 /***********************************************************************************************/
 
+
 @media screen and (max-width: 1200px) {
 
   #about-section .about {
     padding-top: 40px;
   }
 
+ 
+
 }
+
 
 @media screen and (max-width: 992px) {
 
@@ -1525,57 +1476,18 @@ footer {
     display: none;
   }
 
-  ul.price-table {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
   .banner-image {
     margin-top: 40px!important;
-  }
-
-  .gallery-masory {
-    width: auto;
-  }
-
-  .contactform {
-    padding: 80px 10px;
-  }
-
-  .portfolio-desc .col-sm-4 {
-    margin-bottom: 20px;
-  }
-
-  .portfolio-rel figure {
-    margin-bottom: 20px;
-  }
-
-  .form-inline .form-control, .form-inline .form-group {
-    display: block;
-  }
-
-  .newsletter-field {
-    width: 100%;
-  }
-
-  #subscribe-section #subscribe-button {
-    display: block;
-    width: 100%;
-  }
-
-  #blog-head {
-    text-align: center!important;
-  }
-
-  #search-form {
-    margin-top: 30px;
   }
 
   .breadcrumb {
     text-align: center;
   }
 
+
+
 }
+
 
 @media screen and (max-width: 768px) {
 
@@ -1625,8 +1537,9 @@ footer {
   }
 
   .banner-content {
-    margin-top: 80px;
-    margin-bottom: 60px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    margin: auto;
     text-align: center;
   }
 
@@ -1635,15 +1548,11 @@ footer {
     margin-bottom: 40px;
   }
 
-  .client img {
-    width: 70%!important;
-  }
-
-  .about-me h4 a {
-    margin-bottom: 30px;
-  }
-
 }
+
+
+
+
 
 @media screen and (max-width: 640px) {
   
@@ -1693,10 +1602,19 @@ footer {
     width: 100%!important;
   }
 
+  
+
 }
+
+
+
 
 @media screen and (max-width: 480px) {
   .back-to-top {
     visibility: hidden;
   }
+
+
 }
+
+
