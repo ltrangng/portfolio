@@ -69,7 +69,7 @@ body {
 }
 
 a {
-  color: black;
+  color: #232323;
 }
 
 a:hover {
@@ -118,7 +118,7 @@ header .navbar .container .nav-item .nav-link {
   font-family: 'TradeGothicLTStd', 'FuturaLT-Heavy', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
-  color: black;
+  color: #232323;
 }
 
 header .navbar .container .nav-item .nav-link:hover {
@@ -386,7 +386,7 @@ font-family: 'Amatic SC', cursive;
 font-weight: 700;
 font-size: 2rem;
 margin: auto auto;
-color: #000;
+color: #232323;
 padding-top: 10px;
 }
 
@@ -403,7 +403,7 @@ padding-top: 10px;
 }
 
 .social_widget .list a {
-  color: black;
+  color: #232323;
   font-size: 32px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -688,10 +688,7 @@ height: 100px;
   height: auto;
 }
 
-.my-logo {
-  width: auto;
-  height: 70px;
-}
+
 
 #services {
   width: 100%;
@@ -750,10 +747,6 @@ padding-left: 50px;
   height: auto;
 }
 
-.my-logo {
-  width: auto;
-  height: 60px;
-}
 
 #services {
   width: 85%;
@@ -804,16 +797,7 @@ figure.tbox {
     height: auto;
   }
 
-  .my-logo {
-    width: auto;
-    height: 40px;
-  }
 
-  .my-logo {
-    height: 80px;
-    width: auto;
-  
-  }
 
   .testimonials {
     width: 80%;
@@ -839,7 +823,11 @@ figure.tbox {
     margin: auto;
   }
   
+  .my-logo {
+    height: 40px;
+    width: auto;
   
+  }
 
 
   figure.tbox {
