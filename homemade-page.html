@@ -1,92 +1,1511 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="icons/favicon.png" type="image/png" />
-    <meta name="description" content="Self-designed and Self-built Homepage by Le Trang Nguyen">
-    <title>Homemade Page</title>
-    <!--Google Fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
-      rel="stylesheet">
-    <!--Fontawesome-->
-    <script src="https://kit.fontawesome.com/3aa37b1468.js" crossorigin="anonymous"></script>
-    <!--CSS Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  
-    <!-- main css -->
-    <link rel="stylesheet" href="style.css"/>
 
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="img/favicon.png" type="image/png" />
+  <meta name="description" content="Self-designed and -built Portfolio">
+  <title>Homemade-page</title>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Google Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
 
-  <body>
+  <!--Fontawesome-->
+  <script src="https://kit.fontawesome.com/3aa37b1468.js" crossorigin="anonymous"></script>
+  <!-- Bootstrap CSS Style -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <header>
-        <nav class="navbar navbar-expand-lg mx-auto my-auto pt-5">
-          <div class="container">    
-            <a class="navbar-brand nav-link active float-left" aria-current="page" href="index.html">
-              <img src="img/studio-logo.png" alt="logo" width="auto" height="100px">
-              </a>
-      
+  <!-- Template CSS Style -->
+  <link rel="stylesheet" href="css/pluto-pay.css">
+
+  <!-- Animate CSS  -->
+  <link rel="stylesheet" href="css/animate.css">
+
+  <!-- et line font  -->
+  <link rel="stylesheet" href="css/et-line-font/style.css">
+
+  <!-- BXslider CSS  -->
+  <link rel="stylesheet" href="css/bxslider/jquery.bxslider.css">
+
+  <!-- Owl Carousel CSS Style -->
+  <link rel="stylesheet" href="css/owl-carousel/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl-carousel/owl.theme.css">
+  <link rel="stylesheet" href="css/owl-carousel/owl.transitions.css">
+
+  <!-- Magnific-Popup CSS Style -->
+  <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+
+
+
+
+</head>
+
+<body>
+
+  <!-- Preload the Whole Page -->
+  <div id="preloader">
+    <div id="loading-animation">&nbsp;</div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="header">
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-        
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ms-auto float-right align-top">
-                <li class="nav-item px-5">
-                  <a class="nav-link" aria-current="page" href="/#my-work">MY WORK</a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navigation-nav">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">
+            <img src="img/studio-animate.gif" alt="logo" width="auto" height="70px"
+              srcset="img/studio-animate.gif w500w, img/studio-animate@2x.gif 1000w"></a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="navigation-nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a class="section-scroll" href="#hero-section">START</a></li>
+            <li><a href="#features-section">DISCOVER</a></li>
+            <li><a href="#statement">DEFINE</a></li>
+            <li><a href="#screenshots-section">DESIGN</a></li>
+            <li><a href="#prototype-final">DELIVER</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+
+  <div id="wrapper">
+
+    <!-- Hero-->
+    <section>
+      <div id="hero-section" class="landing-hero" data-stellar-background-ratio="0">
+        <div class="hero-content">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+
+                <div class="hero-text">
+                  <div class="herolider">
+                    <ul class="caption-slides">
+
+                      <li class="caption">
+                        <h1>PLUTO PAY</h1>
+                        <div class="div-line"></div>
+                        <p class="hero">WEB APP</p>
+                      </li>
+
+                      <li class="caption">
+                        <h1>E-WALLET</h1>
+                        <div class="div-line"></div>
+                        <p class="hero">MOBILE DESIGN</p>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="hero-btn">
+                  <a href="https://github.com/ltrangng/portfolio/blob/master/misc/2101_Case-study.pdf"
+                    class="btn btn-clean">Read Case Study</a>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Objectives--->
+    <section>
+      <div class="pad-sec">
+        <div class="container">
+
+          <div class="title-section big-title-sec animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="big-title">OBJECTIVES</h2>
+                <p class="big-text">“Allow <u>anyone</u> to <u>shop</u>, <u>transfer money</u>, and more
+                  <u>without</u> a debit or credit card or the need to visit a physical bank or store.”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="title-section big-title-sec animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="big-title">FRAMEWORK</h2>
+                <p>The Double Diamond model is the authodox framework for design thinking, but I implemented here the
+                  Tripple Diamond model in which it started with a vision. I stay firm in my UX approach: Research
+                  should take up to 50% of the time allocation. It is important to <strong>solve the right
+                    problem</strong>.</p>
+                <img src="img/2102-plutopay/2102-framework.jpeg" width="800px" height="auto">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Design Thinking-->
+    <section>
+      <div class="design-thinking">
+
+        <div class="row">
+          <h2 class="big-title about-box">DESIGN THINKING</h2>
+          <img src="img/2102-plutopay/2102-design-thinking.jpg" height="auto" alt="Design Thinking Process">
+        </div>
+
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+
+              <p>A short research about how digital payment works is initiated with <strong>competitor analysis</strong>
+                from a traditional banking app to more progressive fanancial services. <strong>User research</strong>
+                involves recruiting interviewees from my target audience. A <strong>problem statement</strong> is then
+                clearly defined and <strong>user stories</strong> are constructed.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+
+              <p><strong>Personas</strong> are created based on the interviewees’ commonalities. For each feature of the
+                app I create an <strong>user flow</strong> and more specific <strong>task flows</strong>. Methods like
+                <strong></strong>Mental Model</strong> and <strong>User Journey Mapping</strong> are applied. A
+                <strong>sitemap</strong> is constructed based on results from <strong>Card Sorting</strong> exercise to
+                manage the web app’s structure.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+
+              <p><strong>Figma</strong> is the main tool for creating wireframes in digital format preparing prototype
+                for <strong>Usability Testing</strong>, along with a <strong>test script</strong> and a <strong>test
+                  plan</strong>. The prototype is then re-adjusted based on the test's evaluation. A <strong>Preference
+                  Testing</strong> is used when the design choice is still indecisive. Finally, an <strong>unmoderated
+                  User Testing</strong> in survey form is conducted to collect further feedbacks.</p>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+              <p>In this step I go back to the POV to adjust my personas’ necessary traits to make the story coherent
+                and engaging. For the final delivery I use a <strong>Vidyard</strong> for a short video presentation to
+                demonstrate a walk-through of the app's main functionalities.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Understand Problem -->
+    <section>
+      <div id="features-section" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2>UNDERSTAND THE PROBLEM</h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-3 without-padding">
+              <div class="left-features-services">
+                <ul class="features-list">
+
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="fa-solid fa-circle-exclamation"></i></span>
+                      <div class="features-box-content">
+                        <p><strong>Exclusive</strong></p>
+                        <p>The underlying problem of the legacy financial system is still the access to a bank account.
+                          This exculdes the unbanked, the refugees, immigrants without a permanant address, the nomads
+                          or digital nomads etc.</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="fa-solid fa-circle-exclamation"></i></span>
+                      <div class="features-box-content">
+                        <p><strong>Privacy & Trust</strong></p>
+                        <p>PayPal shares their users’ data to over 600 other third-parties. Banks and trust parties can
+                          unilaterally freeze users’ account and reverse transactions. Users never truly own their fund
+                          or their data.</p>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li>
+                    <div class="left-features-box animated out" data-animation="fadeInLeft" data-delay="0">
+                      <span class="iconbox"><i class="fa-solid fa-circle-exclamation"></i></span>
+                      <div class="features-box-content">
+                        <p><strong>International payment</strong></p>
+                        <p>Banking is the technology of the 19<sup>th</sup> century still operating in the context of
+                          the 21<sup>st</sup> century. The increasing demand for remittance each year still has to go
+                          through instutions like Western Union with high fee and long processing time.</p>
+                      </div>
+                    </div>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="features-image animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="img/2102-plutopay/2102-Understand-problem.png" alt="Diagram of different payment systems">
+              </div>
+            </div>
+
+            <div class="col-md-3 without-padding">
+              <div class="right-features-services">
+                <ul class="features-list">
+
+                  <li>
+                    <div class="right-features-box animated out" data-animation="fadeInRight" data-delay="0">
+                      <div class="features-box-content">
+                        <p>All the problems of the legacy finacial system could be solved with the new open monetary
+                          networks, only that they are also facing other problems:</p>
+                      </div>
+
+                      <span class="iconbox"><i class="fa-solid fa-circle-exclamation"></i></span>
+                      <div class="features-box-content">
+
+                        <p><strong>Resistence from current system</strong></p>
+                        <p>Banks and governments have been gatekeepers of the monetary systems for centuries. A
+                          disruptive technology for moving value across the internet permissionlessly creates an
+                          existential threat.
+                        </p>
+                      </div>
+                  </li>
+
+                  <span class="iconbox"><i class="fa-solid fa-circle-exclamation"></i></span>
+                  <div class="features-box-content">
+
+                    <p><strong>Steep learning curve</strong></p>
+                    <p>Open monetary networks using cryptocurrencies are completely different from conventional ones.
+                      They also introduce the concept of “self-custody” or “being your own bank”. To enter this space,
+                      users need to be relatively technological competent because the transactions in the network can’t
+                      be reserved.
+                    </p>
+
+
+                </ul>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Competitor Analysis-->
+    <section>
+      <div>
+        <div class="container">
+
+          <div class="title-section big-title-sec animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2 class="big-title">COMPETITOR ANALYSIS</h2>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="offer-boxes">
+            <div class="logo-sec">
+              <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+                <div class="offer-icon">
+                  <img src="img/2102-plutopay/2102-ING.png" width="auto" height="60px" alt="ING's logo">
+                </div>
+                <h5>Institution</h5>
+                <p>ING is a pretigious bank. The app design also reflects its rigid but trust-worthy features. However,
+                  in the new context of global economy and the latest development in FinTech, banks cannot compete with
+                  softwares that never sleep.</p>
+              </div>
+            </div>
+
+            <div class="logo-sec">
+              <div class="offer-post text-center animated out" data-animation="fadeInLeft" data-delay="0">
+                <div class="offer-icon">
+                  <img src="img/2102-plutopay/2102-PayPal.png" width="auto" height="60px" alt="Revolut's logo">
+                </div>
+                <h5>Corperation</h5>
+                <p>PayPal has the largest network by users since 2000. Its app is still user-friendly but lacks the
+                  innovation edge. The company’s strategy is an aggressive expansion by acquiring smaller online payment
+                  services like Xoom, iZettle and Venmo.</p>
+              </div>
+            </div>
+
+            <div class="logo-sec">
+              <div class="offer-post text-center animated out" data-animation="fadeInUp" data-delay="0">
+                <div class="offer-icon">
+                  <img src="img/2102-plutopay/2102-revolut.svg" width="auto" height="60px" alt="Revolut's logo">
+                </div>
+                <h5>Start-up</h5>
+                <p>Revolut offers all-in-one solution in a Super app. The design reflects exactly that and makes it
+                  rather overwhelming and overcrowded with choices. Option to trade cryptocurrencies is available as
+                  assets, not as payment.
+                </p>
+              </div>
+            </div>
+
+            <div class="logo-sec">
+              <div class="offer-post text-center animated out" data-animation="fadeInRight" data-delay="0">
+                <div class="offer-icon">
+                  <img src="img/2102-plutopay/2102-Bluewallet.jpg" width="auto" height="60px" alt="Revolut's logo">
+                </div>
+                <h5>Grassroots</h5>
+                <p>BlueWallet is a Bitcoin wallet with support for the Lightning Network. The project is open-source and
+                  developed by its community. The app design is simple, almost too basic, but easy to use for a complex
+                  product.</p>
+              </div>
+            </div>
+
+            <div class="logo-sec">
+              <div class="offer-post text-center animated out" data-animation="fadeInRight" data-delay="0">
+                <div class="offer-icon">
+                  <img src="img/2102-plutopay/2102-Valora.jpg" width="auto" height="60px" alt="Revolut's logo">
+                </div>
+                <h5>NGO</h5>
+                <p>Valora wallet is a part of the project initiated by the Celo Foundation with focus on financial
+                  inclusion and social good. The app design is highly asthetical, with a young, fresh and modern touch.
+                  The challenge here is its own currency celo adding more complexity.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Target audience-->
+    <section>
+      <div id="banner-services" data-stellar-background-ratio="0">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="banner-content animated out" data-animation="fadeInUp" data-delay="0">
+                <h2 class="banner-heading">TAREGET AUDIENCE</h2>
+                <div class="banner-decription">
+                  <p>The target audience are citizens of countries whose currencies fail their people to preserve their
+                    purchasing
+                    power. I choose Argentina to first launch the project for these dominant reasons: extreme inflation
+                    (currently over 70%), young demographics, potential competitive advantage in expanding the market to
+                    neighbour Latin American countries that share the same language and similar culture.</p>
+                </div>
+                <div>
+                  <a href="https://github.com/ltrangng/portfolio/blob/master/misc/2101_User-research.pdf"
+                    class="btn btn-clean">Read Full Research</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="banner-image animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="img/2102-plutopay/2102-arsusd.png" height="350px" width="auto" alt="Exchange rate of ARS and USD over time">
+              </div>
+              <div>
+                <p><em><small>FRED Database, Federal Reserve Bank of St. Louis.</em></small></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Problem statement--->
+    <section id="statement">
+      <div class="pad-sec">
+        <div class="container">
+
+          <div class="title-section big-title-sec animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-11 col-sm-offset-1">
+                <h2 class="big-title">PROBLEM STATEMENT</h2>
+                <p class="big-text">“Users need a way to <u>preserve their purchasing power</u> using a better form of
+                  money rather than their local debased currency. They also need to be able to <u>send money</u> to each
+                  other fast and with low fee.”
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="title-section big-title-sec animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-11 col-sm-offset-1">
+                <h2 class="big-title">HYPOTHESIS</h2>
+                <p class="big-text" style="color: #3a7bd5">"We will know this to be true when we see users use
+                  PlutoPay as an application to <u>manage their savings</u> in bitcoin and use the integrated
+                  Lightning Network for other <u>money transfer</u> without having to convert back to the local
+                  currency."
+                </p>
+              </div>
+            </div>
+          </div>
+    </section>
+
+
+
+    <!--Personas-->
+    <section>
+      <div id="personas">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2>PERSONAS</h2>
+
+                <p>I aim to be inclusive in my design, so my second persona is someone in the older demography who is
+                  reluctant to use any new form of digital payment. To make the story more coherent, the two personas
+                  are family-related. It is not unusual that children teach their parents or grandparents how to use the
+                  computer or speak english. They could teach them to how use digital wallets, too.</p>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- end title-section -->
+
+
+
+          <div class="team-members">
+
+            <div class="col-sm-4">
+              <div class="member-team animated out" data-animation="fadeInLeft" data-delay="0">
+                <img src="img/2102-plutopay/2102-persona1.jpg" alt="">
+                <div class="magnifier">
+                  <div class="magnifier-inner">
+                    <h3>DIEGO</h3>
+                    <p>22, student, lives with his parents and siblings. He's at 3<sup>rd</sup> year of System
+                      Engineering at National University of Córdoba, Argentina.</p>
+                    <p><cite>“I saw my parents and grandparents struggle to keep up with life. I want a
+                        change for my generation.”</cite></p>
+
+                    <p><cite>“There’re so many cool things happening now in the tech world with this thing called
+                        Bitcoin and crypto. I want to be part of it.”</cite></p>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-4">
+              <div class="member-team animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="img/2102-plutopay/2102-persona2.jpg" alt="">
+                <div class="magnifier">
+                  <div class="magnifier-inner">
+                    <h3>LUIS</h3>
+                    <p>70, pensioner, lives with his wife. His three children and six grandchilden all live in the
+                      neighbour.</p>
+                    <p><cite>“Apart from the house, I hope I can have some savings left for my family.”</cite></p>
+                    <p><cite>“My old friends and I prefer certain ways for things in life. We often talk about the
+                        old days. But our opinions don’t matter. We’ll be gone soon. It’s the generation of my
+                        grandchildren that should take over the future of this country.”</cite></p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+          </div>
+        </div> >
+      </div>
+
+    </section>
+
+
+    <!-- User Journey -->
+    <section>
+      <div id="features-app-section-2" class="pad-sec">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4 features-app-content-left animated out" data-animation="fadeInLeft" data-delay="0">
+              <div class="section_header">
+                <h2>USER JOURNEY MAP</h2>
+              </div>
+
+              <ul class="features-app-list">
+
+                <li>
+                  <div class="feature-app-box animated out" data-animation="fadeInLeft" data-delay="0">
+                    <div class="app-feature-icon pull-left"><span class="pe-7s-graph"></span></div>
+                    <div class="feature-app-box-content">
+                      <p><strong>Scenario</strong></p>
+                      <p>Diego already did his research about Bitcoin and created his savings account in PlutoPay. He
+                        wants now to buy his first bitcoin with the check he received from his grandfather Luis as a
+                        birthday gift.</p>
+                    </div>
+                  </div>
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="/#about-me">ABOUT ME</a>
+
+                <li>
+                  <div class="feature-app-box animated out" data-animation="fadeInLeft" data-delay="0">
+                    <div class="app-feature-icon pull-left"><span class="pe-7s-config"></span></div>
+                    <div class="feature-app-box-content">
+                      <p><strong>Goal and Expectation</strong></p>
+                      <p>Buy his first bitcoin and get familiar with bitcoin transaction.</p>
+                    </div>
+                  </div>
                 </li>
+
               </ul>
             </div>
-        
-          </div>
-        </nav>
-      </header>
 
-      <section class="section-slogan">
+            <div class="col-sm-8 text-center img-app-right animated out" data-animation="fadeInRight" data-delay="0">
+              <figure>
+                <img src="img/2102-plutopay/2102-User-journey.png" alt="User Journey Method">
+              </figure>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--Mental model-->
+    <section>
+      <div id="creative-section-1" class="pad-sec">
         <div class="container">
-          <div class="container-inner">
-            <div class="field field-name-body field-type-text-with-summary field-label-hidden">
-              <div class="field-items">
-                <div class="field-item even" property="content:encoded">
-                  <h1><strong>HOME-</strong> 
-                    <strong>-MADE</strong>
-                    <strong>PAGE</strong></h1>
-                  <h2>WEB DESIGN</h2>
+          <div class="row">
+
+            <div class="col-sm-8 img-creative-left text-center animated out" data-animation="fadeInLeft" data-delay="0">
+              <figure>
+                <img src="img/2102-plutopay/2102-mental-model.jpg" alt="Mental Model method">
+              </figure>
+            </div> <!-- End col-sm-8 -->
+
+            <div class="col-sm-4 creative-content-right animated out" data-animation="fadeInRight" data-delay="0">
+              <div class="section_header">
+                <h2>MENTAL MODEL</h2>
+              </div> <!-- End section_header -->
+
+              <ul class="features-app-list">
+
+                <li>
+                  <div class="feature-app-box animated out" data-animation="fadeInLeft" data-delay="0">
+                    <div class="app-feature-icon pull-right"><span class="pe-7s-graph"></span></div>
+                    <div class="feature-app-box-content">
+                      <p><strong>Scenario</strong></p>
+                      <p>Luis is already convinced by Diego to create a savings account with
+                        PlutoPay. He does not understand this digital money, but he trusts Diego. He knows his grandson
+                        is competent in new technology and can help him to take care of his finance.
+                        Besides, what else could he do with the peso?</p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-app-box animated out" data-animation="fadeInLeft" data-delay="0">
+                    <div class="app-feature-icon pull-right"><span class="pe-7s-config"></span></div>
+                    <div class="feature-app-box-content">
+                      <p><strong>Goal and Expectation</strong></p>
+                      <p>Set up a savings account in bitcoin.</p>
+                    </div>
+                  </div>
+                </li>
+
+              </ul>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section>
+      <div class="design-thinking">
+
+        <div class="row">
+          <h2 class="big-title about-box">SITEMAP</h2>
+          <img src="img/2102-plutopay/2102-sitemap.png" height="auto" alt="Sitemap">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Usability Testing-->
+    <section>
+      <div id="testing" data-stellar-background-ratio="0">
+        <div class="container">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <div class="banner-content text-white animated out" data-animation="fadeInUp" data-delay="0">
+                <h2 class="banner-heading">USABILITY TESTING</h2>
+                <div class="banner-decription">
+                  <p>The Usability Testing is conducted on 5 main features:</p>
+                  <ul>
+                    <li>Create a PlutoPay account</li>
+                    <li>Create a new Savings account</li>
+                    <li>Convert peso to bitcoin</li>
+                    <li>Transfer fund from Savings to Spending</li>
+                    <li>Request payment in Spending account</li>
+                  </ul>
+
+                </div>
+                <div>
+                  <a href="https://github.com/ltrangng/portfolio/blob/master/misc/2101_Usability-testing.pdf" class="btn btn-clean">View Full Testing</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="mifi animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="img/2102-plutopay/2102-usability-testing.gif" height="auto" width="240px" alt="Proptype for Usability Testing">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Iterative Design -->
+    <section>
+      <div id="screenshots-section" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h2>ITERATIVE DESIGN</h2>
+                <br>
+                <h4>ONBOARDING</h4>
+                <p>The argentinean flag is used as a background image to create familarity and to build local
+                  trust. From the Usability Testing I noticed the participants just swiped their way through the screens
+                  without reading the introduction for long. So I tweak the design to be more engaging by adding
+                  emotional design and little animation. The idea is to make it like opening first pages of a book.</p>
+              </div>
+            </div> <!-- End row -->
+          </div> <!-- end title-section -->
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="screenshots-carousel animated out" data-animation="fadeInUp" data-delay="0">
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-lofi1.jpg"><img style='border: none;' src="img/2102-plutopay/2102-onboarding-lofi1.jpg"  alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-lofi2.jpg"><img style='border: none;' src="img/2102-plutopay/2102-onboarding-lofi2.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-lofi3.jpg"><img style='border: none;' src="img/2102-plutopay/2102-onboarding-lofi3.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-lofi4.jpg"><img style='border: none;' src="img/2102-plutopay/2102-onboarding-lofi4.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div> 
+
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-mifi1.jpg"><img src="img/2102-plutopay/2102-onboarding-mifi1.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-mifi2.jpg"><img src="img/2102-plutopay/2102-onboarding-mifi2.jpg"                    alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-mifi3.jpg"><img src="img/2102-plutopay/2102-onboarding-mifi3.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-mifi4.jpg"><img src="img/2102-plutopay/2102-onboarding-mifi4.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-hifi1.jpg"><img src="img/2102-plutopay/2102-onboarding-hifi1.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-hifi2.jpg"><img src="img/2102-plutopay/2102-onboarding-hifi2.jpg"                         alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-hifi3.jpg"><img src="img/2102-plutopay/2102-onboarding-hifi3.jpg"                         alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-hifi4.jpg"><img src="img/2102-plutopay/2102-onboarding-hifi4.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div>
+
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/21021-onboarding-final1.png"><img src="img/2102-plutopay/2102-onboarding-final1.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-final2.png"><img src="img/2102-plutopay/2102-onboarding-final2.png"                        alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-final3.png"><img src="img/2102-plutopay/2102-onboarding-final3.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div> 
+                </div> 
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-onboarding-final4.png"><img src="img/2102-plutopay/2102-onboarding-final4.png"                        alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div> 
+
+              </div> 
+            </div> 
+          </div> 
+        </div>
+      </div>
+    </section>
+    <!-- End Iterative Onboarding -->
+
+    <!-- Iterative Signup-Signin -->
+    <section>
+      <div id="screenshots-section" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h4>SIGN UP / SIGN IN</h4>
+                <p>The Sign-up/Sign-in started with rather complicated design. In my opinion, a financial app requires
+                  high caution from the beginning, hence the code and PIN. The Usability Testing revealed that creating
+                  PIN right after signing up is unusal. I remove this step and make the Sign-up/Sign-in process as
+                  simple and painless as possible.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-12">
+            <div class="screenshots-carousel animated out" data-animation="fadeInUp" data-delay="0">
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-lofi1.PNG"><img style='border: none;' src="img/2102-plutopay/2102-signup-lofi1.PNG" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-lofi2.PNG"><img style='border: none;' src="img/2102-plutopay/2102-signup-lofi2.PNG" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-lofi3.PNG"><img style='border: none;' src="img/2102-plutopay/2102-signup-lofi3.PNG" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-lofi4.PNG"><img style='border: none;' src="img/2102-plutopay/2102-signup-lofi4.PNG" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-lofi5.PNG"><img style='border: none;' src="img/2102-plutopay/2102-signup-lofi5.PNG" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-lofi6.PNG"><img style='border: none;' src="img/2102-plutopay/2102-signup-lofi6.PNG" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-lofi7.PNG"><img
+                      src="img/2102-plutopay/2102-signup-lofi7.PNG" style='border: none;' alt="screenshot" width="240px"
+                      height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-mifi1.jpg"><img
+                      src="img/2102-plutopay/2102-signup-mifi1.jpg" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-mifi2.jpg"><img
+                      src="img/2102-plutopay/2102-signup-mifi2.jpg" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-mifi3.jpg"><img
+                      src="img/2102-plutopay/2102-signup-mifi3.jpg" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-mifi4.jpg"><img
+                      src="img/2102-plutopay/2102-signup-mifi4.jpg" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div> 
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-hifi1.png"><img
+                      src="img/2102-plutopay/2102-signup-hifi1.png" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-hifi2.png"><img
+                      src="img/2102-plutopay/2102-signup-hifi2.png" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-hifi3.png"><img
+                      src="img/2102-plutopay/2102-signup-hifi3.png" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-hifi4.png"><img
+                      src="img/2102-plutopay/2102-signup-hifi4.png" alt="screenshot" width="240px" height="auto"></a>
+                </div>
+              </div>
+
+              <div class="shot">
+                <div class="screen">
+                  <a class="zoom" href="img/2102-plutopay/2102-signup-hifi5.png"><img
+                      src="img/2102-plutopay/2102-signup-hifi5.png" alt="screenshot" width="240px" height="auto"></a>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </section>
-    
+    </section>
+    <!-- End Iterative Signup -->
+
+
+    <!-- Iterative Create Savings account-->
+    <section>
+      <div id="screenshots-section" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h4>CREATE A SAVINGS ACCOUNT</h4>
+                <p>The flow of creating a self-custodied wallet is probably the most
+                  challenging to people who are not familiar with the self-custody
+                  concept. In the begining I used commonly known terms like “Wallet”, “recovery seeds”, yet these terms
+                  are not exactly industry-standardized. “Account” is then used instead of “wallet” because the app is
+                  designed for new users transitting from the legacy finance system. “Secret key” is used instead of
+                  “recovery seeds” or “seed phrase”. I want to emphasize the secretness in these words, and the “key” in
+                  the common saying “Not your key, not your coin” in the Bitcoin community. Not all people know
+                  what a key really is.</p>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="row">
+
+
+            <div class="col-md-12">
+              <div class="screenshots-carousel animated out" data-animation="fadeInUp" data-delay="0">
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-lofi1.PNG"><img style='border: none;' src="img/2102-plutopay/2102-savings-lofi1.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-lofi2.PNG"><img style='border: none;' src="img/2102-plutopay/2102-savings-lofi2.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-lofi3.PNG"><img style='border: none;' src="img/2102-plutopay/2102-savings-lofi3.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-lofi4.PNG"><img style='border: none;' src="img/2102-plutopay/2102-savings-lofi4.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-lofi5.PNG"><img style='border: none;' src="img/2102-plutopay/2102-savings-lofi5.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-lofi6.PNG"><img style='border: none;' src="img/2102-plutopay/2102-savings-lofi6.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-mifi1.jpg"><img
+                        src="img/2102-plutopay/2102-savings-mifi1.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-mifi2.jpg"><img
+                        src="img/2102-plutopay/2102-savings-mifi2.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-mifi3.jpg"><img
+                        src="img/2102-plutopay/2102-savings-mifi3.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-mifi4.jpg"><img
+                        src="img/2102-plutopay/2102-savings-mifi4.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-mifi5.jpg"><img
+                        src="img/2102-plutopay/2102-savings-mifi5.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-mifi6.jpg"><img
+                        src="img/2102-plutopay/2102-savings-mifi6.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi1.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi1.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi2.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi2.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi3.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi3.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi4.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi4.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi5.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi5.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi6.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi6.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi6a.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi6a.png" alt="screenshot" width="240px"
+                        height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi7.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi7.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi8.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi8.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi9.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi9.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-savings-hifi10.png"><img
+                        src="img/2102-plutopay/2102-savings-hifi10.png" alt="screenshot" width="240px"
+                        height="auto"></a>
+                  </div>
+                </div>
+
+
+              </div> <!-- end screenshots-carousel -->
+            </div> <!-- end col-md-12 -->
+
+            <div class="title-section animated out" data-animation="fadeInUp" data-delay="0">
+              <div class="row">
+                <div class="col-sm-8 col-sm-offset-2">
+                  <p>The high-fidelity level design results in even more
+                    screens:
+
+                    <li>Introduce more options to set up the app
+                      security.</li>
+                    <li>A progress bar with step indicator </li>
+                    <li>Add an unavoidable warning.</li>
+                    <li>Replace the typing with a tap-and-drop
+                      method to avoid frustration in misspelling. I
+                      came up with this arrangement after learning
+                      about spatial cognition. Arranging the words
+                      in a 3 x 4 grid gives more chances to remember
+                      the word order rather than tying them with a
+                      number.</li>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <!-- End Iterative Savings -->
+
+
+    <!-- Iterative Buy bitcoin-->
+    <section>
+      <div id="screenshots-section" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h4>BUY BITCOIN WITH PESO</h4>
+                <p>The whole purpose of the app is to escape from a devaluing
+                  currency (peso) by converting them to a better asset that
+                  retains the purchasing power (bitcoin). My original idea is
+                  to make “Convert peso to bitcoin” the major feature. It had
+                  a separate button right beneath the Total balance in the
+                  Dashboard and Savings’ balance to be accessed as easy
+                  as possible. However, one fundamental mistake I learn from the Usability Testing is you can only
+                  convert peso to bitcoin if you already have peso. Since PlutoPay is an application provider without
+                  money transmitting license, it deligates this task to financial
+                  instutions that have the priviledges to handle a sovereign
+                  currency.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <div class="screenshots-carousel animated out" data-animation="fadeInUp" data-delay="0">
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-lofi2.PNG"><img style='border: none;'
+                        src="img/2102-plutopay/2102-buy-lofi2.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-lofi3.PNG"><img style='border: none;'
+                        src="img/2102-plutopay/2102-buy-lofi3.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-lofi4.PNG"><img style='border: none;'
+                        src="img/2102-plutopay/2102-buy-lofi4.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-lofi5.PNG"><img style='border: none;'
+                        src="img/2102-plutopay/2102-buy-lofi5.PNG" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-mifi1.jpg"><img
+                        src="img/2102-plutopay/2102-buy-mifi1.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-mifi2.jpg"><img
+                        src="img/2102-plutopay/2102-buy-mifi2.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi3.jpg"><img
+                        src="img/2102-plutopay/2102-buy-mifi3.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-mifi4.jpg"><img
+                        src="img/2102-plutopay/2102-buy-mifi4.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-mifi5.jpg"><img
+                        src="img/2102-plutopay/2102-buy-mifi5.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-mifi6.jpg"><img
+                        src="img/2102-plutopay/2102-buy-mifi6.jpg" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi1.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi1.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi2.png"><img
+                        src="img//2102-plutopay/2102-buy-hifi2.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi3.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi3.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi4.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi4.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi5.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi5.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi6.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi6.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi7.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi7.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi8.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi8.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi9.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi9.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-buy-hifi10.png"><img
+                        src="img/2102-plutopay/2102-buy-hifi10.png" alt="screenshot" width="240px" height="auto"></a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Iterative Buy bitcoin -->
 
 
 
-  <!--JS Bootstrap-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
-    crossorigin="anonymous"></script>
+    <!-- Iterative Dashboard-->
+    <section>
+      <div id="screenshots-section" class="pad-sec">
+        <div class="container">
+          <div class="title-section text-center animated out" data-animation="fadeInUp" data-delay="0">
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-2">
+                <h4>DASHBOARD</h4>
+                <p>The dashboard was first packed with information. The most
+                  important elements are the two cards that show an overview
+                  of the two accounts. I revise my User journey maps again and
+                  conclude that users don’t need all addtional features. The
+                  final design chose a minimal approach, only shows what’s
+                  necessary. The cards are styled resembling a physical debit/
+                  credit cards for a familar touch.</p>
+              </div>
+            </div>
+          </div>
 
-  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
-    
-  <script src="scripts.js"></script>
-  <script src="scrollreveal.js"></script>
+          <div class="row">
+            <div class="col-md-12">
+              <div class="screenshots-carousel text-center animated out" data-animation="fadeInUp" data-delay="0">
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-dashboard-lofi.jpg"><img style="border: none;"
+                        src="img/2102-plutopay/2102-dashboard-lofi.jpg" width="240px" height="auto"
+                        alt="screenshot"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-dashboard-mifi.jpg"><img class="border"
+                        src="img/2102-plutopay/2102-dashboard-mifi.jpg" width="240px" height="auto"
+                        alt="screenshot"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-dashboard-hifi.jpg"><img
+                        src="img/2102-plutopay/2102-dashboard-hifi.jpg" width="240px" height="auto"
+                        alt="screenshot"></a>
+                  </div>
+                </div>
+
+                <div class="shot">
+                  <div class="screen">
+                    <a class="zoom" href="img/2102-plutopay/2102-dashboard-final.png"><img
+                        src="img/2102-plutopay/2102-dashboard-final.png" width="240px" height="auto"
+                        alt="screenshot"></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <!-- End Iterative Dashboard-->
 
 
 
-  </body>
+    <section>
+      <div id="prototype-final" data-stellar-background-ratio="0">
+        <div class="container">
+          <div class="row">
+
+            <div class="text-center col-xs-12 col-sm-12 col-md-4">
+              <div class="mifi banner-content animated out text-white" data-animation="fadeInUp" data-delay="0">
+                <h2 class="banner-heading">FINAL PROTOTYPE</h2>
+                <div class="banner-decription">
+                  <p>The final prototype is still currently being tested in an unmoderated User Testing. Would you like
+                    to give it a go?</p>
+                  <div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSexVAoThpmD_GnMCPQvhvyShNovK4ZOe8yrYTJXUcRyJ5up3A/viewform"
+                      class="btn btn-clean">English version</a>
+                  </div>
+
+                  <div>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd5qLlKcgOOen7FEdDLm4VJtPXjbc_8gKd_d6mF7qUdLv-CmA/viewform"
+                      class="btn btn-clean">Spanish version</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="text-center col-xs-12 col-sm-6 col-md-4">
+              <div class="mifi animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="img/2102-plutopay/2102-prototype-newuser.gif" width="240px" height="auto"
+                  alt="High-fidelity level Proptype for New User"
+                  srcset="img/2102-plutopay/2102-prototype-newuser.gif 500w img/2102-plutopay/2102-prototype-newuser@2x.gif 1000w">
+              </div>
+            </div>
+            <div class="text-center col-xs-12 col-sm-6 col-md-4">
+              <div class="mifi animated out" data-animation="fadeInUp" data-delay="0">
+                <img src="img/2102-plutopay/2102-prototype-existing-user.gif" width="240px" height="auto"
+                  alt="High-fidelity level Proptype for Existing User"
+                  srcset="img/2102-plutopay/2102-prototype-existinguser.gif 500w img/2102-plutopay/2102-prototype-existingser@2x.gif 1000w">
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="container-fluid mt-5">
+      <div class="row">
+        <div class="col myfooter text-center text-black"><a href="impressum.html">Impressum</a> | © 2022 le trang
+          STUDIO</div>
+      </div>
+    </footer>
+  </div>
+
+
+  </div> <!-- End wrapper -->
+
+  <!-- Back-to-top
+================================================== -->
+  <div class="back-to-top">
+    <i class="fa fa-angle-up fa-3x"></i>
+  </div> <!-- end back-to-top -->
+
+
+  <!-- JS libraries and scripts -->
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
+  <script src="js/jquery.appear.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
+  <script src="js/jquery.owl.carousel.min.js"></script>
+  <script src="js/jquery.countTo.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.imagesloaded.min.js"></script>
+  <script src="js/jquery.isotope.js"></script>
+  <script src="js/jquery.placeholder.js"></script>
+  <script src="js/jquery.smoothscroll.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.waypoints.js"></script>
+  <script src="js/jquery.fitvids.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/jquery.ajaxchimp.min.js"></script>
+  <script src="js/jquery.countdown.js"></script>
+  <script src="js/jquery.navbar-scroll.js"></script>
+  <script src="js/googlemaps.js"></script>
+  <!-- <script src="http://maps.google.com/maps/api/js?sensor=false"></script> -->
+  <script src="js/jquery.gmaps.js"></script>
+  <script src="js/main.js"></script>
+
+
+
+</body>
 
 
 

@@ -110,29 +110,28 @@ header .navbar .container {
   width: 70%;
 }
 
-header .navbar-brand img:hover {
+.navbar .navbar-brand img:hover {
   opacity: 0.5;
 }
 
-header .navbar .container .nav-item .nav-link {
+.navbar .nav-item .nav-link {
   font-family: 'TradeGothicLTStd', 'FuturaLT-Heavy', sans-serif;
   font-weight: 700;
   font-size: 1.15rem;
   color: #232323;
 }
 
-header .navbar .container .nav-item .nav-link:hover {
+.navbar .nav-item .nav-link:hover {
   color: gray;
 }
 
-header .navbar .container .nav-item .nav-link:active {
+.navbar .nav-item .nav-link:active {
   text-decoration: underline;
 }
 
-.my-logo {
-  height: 40px;
+.navbar-brand img {
+  height: 80px !important;
   width: auto;
-  
 }
 
 /*
@@ -197,6 +196,34 @@ MY WORK
 ==================================================
 */
 
+#gallery-filter{
+  margin: auto;
+  padding-left: -80px;
+  padding-top: 20px;
+  padding-bottom: 40px;
+  width: 73%;
+  position: relative;
+  display: block;
+}
+
+.navigation a {
+  font-family: 'TradeGothicLTStd-Bold', 'Lato', sans-serif;
+  text-decoration: none;
+  padding:5px 20px 10px 20px;
+  border-right: 1px solid #232323;
+  color: #232323;
+  font-size: 1.125rem;
+ 
+}
+
+.navigation a:hover{
+  color:gray;
+}
+
+.navigation a.active{
+  text-decoration: underline;
+}
+
 .my-work {
   margin-right: auto;
   margin-left: auto;
@@ -229,6 +256,10 @@ MY WORK
   background: rgba(0, 0, 0, 0.88);
   opacity: 0;
   transition: all 300ms ease;
+}
+
+.my-item-hidden {
+  display: none;
 }
 
 .my-item img {
@@ -564,11 +595,12 @@ FOOTER
 */
 
 footer {
-  margin: 20px auto;
+  margin: 40px auto;
+  
 }
 
 .myfooter {
-  max-height: 200px;
+  max-height: 300px;
   background-color: white;
   text-justify: inter-word;
 }
@@ -624,6 +656,9 @@ RESPONSIVE
 /* X-Small devices (portrait phones, less than 576px) */
 @media (max-width: 576px) { 
 
+.navbar-brand img {
+   height: 40px !important;
+  }
 
 } 
 
@@ -631,7 +666,12 @@ RESPONSIVE
 
 /* Small devices (landscape phones, 576px and up) */
 @media (max-width: 768px) { 
-.section-slogan .container {
+
+ .navbar-brand img {
+  height: 45px !important;
+  }
+
+  .section-slogan .container {
   padding: 40px 0;
 }
 
@@ -655,11 +695,6 @@ RESPONSIVE
   height: auto;
 }
 
-.my-logo {
-  width: auto;
-  height: 60px;
-}
-
 #services {
   width: 100%;
  }
@@ -668,9 +703,6 @@ RESPONSIVE
   width: 95%;
   margin: auto;
 }
-
-
-
 
 .testimonials {
   width: 80%;
@@ -682,10 +714,13 @@ RESPONSIVE
 }
 
 
-
 }
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+
+.navbar-brand img {
+  height: 50px !important;
+}
 
 .section-slogan .container {
   padding: 75px 0;
@@ -729,14 +764,10 @@ height: 100px;
   margin: auto;
 }
 
-
-
 .profile-pic {
   width: 40%;
   height: auto;
 }
-
-
 
 #services {
   width: 100%;
@@ -752,16 +783,13 @@ height: 100px;
 
 }
 
-
-
-
-
-
-
-
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) { 
 
+.navbar-brand img {
+  height: 60px !important;
+}
+  
 .section-slogan h1 {
   font-size: 8.625rem;
 }
@@ -832,6 +860,11 @@ figure.tbox {
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
 
+  .navbar-brand img {
+    height: 70px !important;
+  }
+  
+
   .my-item .my-title h2 {
       padding: 10px 0; 
       font-size: 3.2rem;
@@ -867,6 +900,11 @@ figure.tbox {
 /* XX-Large devices (larger desktops, 1400px and up) */
 @media (min-width: 1400px) { 
 
+  .navbar-brand img {
+    height: 80px !important;
+  }
+  
+
   .testimonials {
     width: 80%;
   }
@@ -874,12 +912,6 @@ figure.tbox {
   .section-title {
     width: 50%;
     margin: auto;
-  }
-  
-  .my-logo {
-    height: 40px;
-    width: auto;
-  
   }
 
 
