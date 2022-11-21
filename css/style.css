@@ -54,15 +54,6 @@ BASE
 ==============================================
 */
 
-#loader{
-	position: fixed;
-	width: 100%;
-	height: 100vh;
-	background: white url('img/loader.gif') no-repeat center;
-	z-index: 999;
-}
-
-
 body {
   font-family: 'FuturaLT', 'Lato', sans-serif;
   font-size: 16px;
@@ -82,13 +73,42 @@ h2 {
 }
 
 p {
-  line-height: 1.6;
-  font-size: 1.1rem;
+  line-height: 1.5;
+  font-size: 1rem;
   text-align: justify;
   text-justify: inter-word;
 }
 
 
+/*
+==============================================
+PRELOADER
+==============================================
+*/
+
+#preloader {
+  background-color: #FFF;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999999;
+}
+
+#loading-animation {
+  background-image: url("../img/loader.GIF") ;
+  opacity: 0.7;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 200px;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  border-radius: 4px;
+}
 
 /*
 ==============================================
@@ -107,7 +127,7 @@ header .navbar .container {
   margin-left: auto;
   padding-left: 0;
   padding-right: 0;
-  width: 70%;
+  width: 80%;
 }
 
 .navbar .navbar-brand img:hover {
@@ -117,7 +137,7 @@ header .navbar .container {
 .navbar .nav-item .nav-link {
   font-family: 'TradeGothicLTStd', 'FuturaLT-Heavy', sans-serif;
   font-weight: 700;
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   color: #232323;
 }
 
@@ -130,7 +150,7 @@ header .navbar .container {
 }
 
 .navbar-brand img {
-  height: 80px !important;
+  height: 40px !important;
   width: auto;
 }
 
@@ -142,9 +162,9 @@ HERO TEXT
 
 .section-slogan {
   margin: auto auto;
-  padding-top: 75px;
-  padding-bottom: 75px;
-  width: 70%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  width: 80%;
   position: relative;
   display: block;
 }
@@ -153,7 +173,6 @@ HERO TEXT
 padding: 50px 0;
 }
 
-
 .section-slogan h1,
 .section-slogan h2 {
 font-family: 'TradeGothicLTStd-Bold', 'Lato', sans-serif;
@@ -161,7 +180,7 @@ margin: 0;
 }
 
 .section-slogan h1 {
-  font-size: 55px;
+  font-size: 3.2rem;
   line-height: 1.1;
 }
 
@@ -170,25 +189,9 @@ display: block;
 }
 
 .section-slogan h2 {
-  font-size: 19px;
+  font-size: 1.15rem;
   letter-spacing: .1em;
 }
-
-
-.section-slogan .sub-title {
-font-family: 'TradeGothicLTStd-Bold', 'Libre Franklin', sans-serif;
-max-width: 29rem;
-line-height: 1.6;
-margin: 24px 0 0 8px;
-letter-spacing: 0.03em;
-font-size: 15px;
-}
-
-.section-slogan .sub-title br {
-  display: none;
-}
-
-
 
 /*
 ==================================================
@@ -196,12 +199,11 @@ MY WORK
 ==================================================
 */
 
-#gallery-filter{
+#gallery-filter {
   margin: auto;
-  padding-left: -80px;
-  padding-top: 20px;
-  padding-bottom: 40px;
-  width: 73%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 85%;
   position: relative;
   display: block;
 }
@@ -209,11 +211,15 @@ MY WORK
 .navigation a {
   font-family: 'TradeGothicLTStd-Bold', 'Lato', sans-serif;
   text-decoration: none;
-  padding:5px 20px 10px 20px;
+  padding: 5px;
   border-right: 1px solid #232323;
   color: #232323;
-  font-size: 1.125rem;
+  font-size: 1.05rem;
  
+}
+
+.navigation:first-child {
+  margin-left: -5px;
 }
 
 .navigation a:hover{
@@ -272,8 +278,6 @@ MY WORK
  
 }
 
-
-
 .my-item .my-title {
   position: absolute;
   width: 100%;
@@ -304,7 +308,6 @@ MY WORK
   cursor: pointer;
 }
 
-
 .my-item .my-title h2 {
   text-align: center;  
   padding: 10px 0;
@@ -315,7 +318,6 @@ MY WORK
   padding: 50px 0;
   font-size: 1.2rem;
 }
-
 
 .my-item:hover:before {
   opacity: 0.4;
@@ -335,14 +337,13 @@ SERVICES
 */
 
 #services {
-   padding: 20px 60px;
+   padding: 20px 10px;
    margin: auto auto;
    display: block;
-   width: 70%;
+   width: 100%;
   }
 
-
-.service{
+.service {
 	border: 1px solid lightgray;
 	margin-top: 20px;
 	margin-bottom: 50px;
@@ -350,8 +351,6 @@ SERVICES
 	position: relative;
 	padding: 50px 10px;
 }
-
-
 
 .service:hover{
 	border-color: gray;
@@ -369,8 +368,9 @@ SERVICES
   line-height: 1.5;
   letter-spacing: 1.1;
 }
+
 .service p {
-	font-size: 14px;
+	font-size: 1rem;
 	padding-top: 20px;
 	font-family: 'FuturaLT', 'Lato', sans-serif;
   color: lightgray;
@@ -381,7 +381,7 @@ SERVICES
 }
 
 .section-title {
-  width: 100%;
+  width: 80%;
   margin: auto;
 }
 
@@ -410,7 +410,6 @@ ABOUT
   position: relative;
  
 }
-
 
 .social_widget .f_title h4 {
 font-family: 'Amatic SC', cursive;
@@ -467,14 +466,14 @@ TESTIMONIALS
   padding: 80px 0;
   text-align: center;
   position: relative;
-  width:90%;
+  width: 100%;
   justify-content: center;
 
 }
 
 .testimonials-carousel {
   width: 60%;
-  margin: auto;
+  margin: auto auto;
 }
 
 ul.testimonials-slider {
@@ -501,7 +500,7 @@ ul.testimonials-slider li p {
   margin: 0 0 20px;
   color: #9B9B9B;
   font-style: italic;
-  letter-spacing: 1.2px;
+  letter-spacing: 1.1px;
 }
 
 .testimonials-author {
@@ -574,8 +573,6 @@ ul.testimonials-slider li p {
 }
 
 
-
-
 /*
 ==================================================
 IMPRESSUM
@@ -606,7 +603,6 @@ footer {
 }
 
 
-
 .footer a:hover {
   color: gray;
 }
@@ -614,12 +610,6 @@ footer {
 .footer p {
 text-align: center;
 }
-
-
-
-/***********************************************************************************************/
-/* =Back to top */
-/***********************************************************************************************/
 
 .back-to-top {
   text-align: center;
@@ -653,55 +643,74 @@ RESPONSIVE
 ==================================================
 */
 
-/* X-Small devices (portrait phones, less than 576px) */
-@media (max-width: 576px) { 
+/* X-Small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
 
-.navbar-brand img {
-   height: 40px !important;
+// Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) { 
+ 
+  header .navbar .container {
+    width: 75%;
   }
 
-} 
-
-/* No media query for `xs` since this is the default in Bootstrap */
-
-/* Small devices (landscape phones, 576px and up) */
-@media (max-width: 768px) { 
-
- .navbar-brand img {
-  height: 45px !important;
+  .navbar-brand img {
+    height: 45px !important;
   }
 
+  .section-slogan {
+    width: 75%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+  }
+  
   .section-slogan .container {
-  padding: 40px 0;
-}
+    padding: 25px 0;
+  }
 
 .section-slogan h1 {
-  font-size: 3.5rem;
-  line-height: 1.15;
+  font-size: 3.45rem;
+  line-height: 1.1;
 }
 
 .section-slogan h2 {
-  font-size: 19px;
+  font-size: 1.1875rem;
 }
 
-.section-slogan .sub-title {
-  line-height: 2;
-  font-size: 16px;
-  max-width: 651px;
+#gallery-filter{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 85%;
+  position: relative;
+  display: block;
+}
+
+.navigation a {
+  padding: 5px;
+  font-size: 1.05rem;
+}
+ 
+.service {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	transition: all 0.3s;
+	position: relative;
+	padding: 20px 10px;
+  width: 100%;
+}
+
+ .section-title {
+  width: 95%;
+  margin: auto;
+}
+
+.service p {
+	font-size: 1rem;
+	padding-top: 10px;
 }
 
 .profile-pic {
   width: 60%;
   height: auto;
-}
-
-#services {
-  width: 100%;
- }
-
- .section-title {
-  width: 95%;
-  margin: auto;
 }
 
 .testimonials {
@@ -712,11 +721,15 @@ RESPONSIVE
 .tablet-hidden {
   display: none;
 }
+ 
+ }
 
-
-}
-/* Medium devices (tablets, 768px and up) */
+/* Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) { 
+
+header .navbar .container {
+    width: 70%;
+  }
 
 .navbar-brand img {
   height: 50px !important;
@@ -726,18 +739,18 @@ RESPONSIVE
   padding: 75px 0;
 }
 
+.section-slogan {
+  width: 70%;
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
 .section-slogan h1 {
-  font-size: 80px;
+  font-size: 6rem;
 }
 
 .section-slogan h2 {
-  font-size: 22px;
-}
-
-.section-slogan .sub-title {
-  line-height: 2;
-  font-size: 16px;
-  max-width: 651px;
+  font-size: 1.375rem;
 }
 
 .my-item .my-title {
@@ -749,41 +762,36 @@ RESPONSIVE
 .my-item .my-title h4 {
   padding: 20px 0; 
 }
-
+  
 .my-text {
-padding-left: 30px;
-}
-
-.navbar .navbar-brand img {
-width: auto;
-height: 100px;
-}
-
+  padding-left: 30px;
+  }
+  
 .section-title {
   width: 70%;
   margin: auto;
-}
-
+  }
+  
 .profile-pic {
   width: 40%;
   height: auto;
-}
-
+  }
+  
 #services {
   width: 100%;
+  }
+
+.testimonials {
+  width: 95%;
+  }
+  
+ .tablet-hidden {
+ display: none;
+  }
+
  }
 
- .testimonials {
-  width: 95%;
-}
-
-.tablet-hidden {
-  display: none;
-}
-
-}
-
-/* Large devices (desktops, 992px and up) */
+/* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) { 
 
 .navbar-brand img {
@@ -791,18 +799,11 @@ height: 100px;
 }
   
 .section-slogan h1 {
-  font-size: 8.625rem;
+  font-size: 8rem;
 }
 
 .section-slogan h2 {
-  font-size: 37px;
-}
-
-.section-slogan .sub-title {
-  line-height: 2.4;
-  margin: 24px 0 0 8px;
-  letter-spacing: 0.13em;
-  font-size: 18px;
+  font-size: 2.15rem;
 }
 
 .my-item .my-title h2 {
@@ -818,29 +819,7 @@ padding: 50px 0;
 padding-left: 50px;
 }
 
-.profile-pic {
-  width: 90%;
-  height: auto;
-}
-
-
-#services {
-  width: 85%;
-  margin: auto;
- }
-
- .section-title {
-  width: 75%;
-  margin: auto;
-}
-
-.testimonials-carousel {
-  width: 80%;
-  margin: auto;
-}
-
-
- .testimonials {
+.testimonials {
   width: 95%;
 }
 
@@ -855,16 +834,16 @@ figure.tbox {
   display: block;
 }
 
+
 }
 
-/* X-Large devices (large desktops, 1200px and up) */
+/* X-Large devices (large desktops, 1200px and up)*/
 @media (min-width: 1200px) { 
 
   .navbar-brand img {
     height: 70px !important;
   }
   
-
   .my-item .my-title h2 {
       padding: 10px 0; 
       font-size: 3.2rem;
@@ -883,8 +862,6 @@ figure.tbox {
     height: auto;
   }
 
-
-
   .testimonials {
     width: 80%;
   }
@@ -894,7 +871,7 @@ figure.tbox {
     margin: auto;
   }
 
-}
+ }
 
 
 /* XX-Large devices (larger desktops, 1400px and up) */
