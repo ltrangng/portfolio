@@ -766,19 +766,24 @@ header .navbar .container {
 .my-text {
   padding-left: 30px;
   }
+
+.service {
+	padding: 20px 20px;
+  width: 100%;
+}
   
 .section-title {
-  width: 70%;
+  width: 80%;
   margin: auto;
   }
   
+#services {
+  width: 80%;
+  }
+
 .profile-pic {
   width: 40%;
   height: auto;
-  }
-  
-#services {
-  width: 100%;
   }
 
 .testimonials {
@@ -814,6 +819,24 @@ header .navbar .container {
 .my-item .my-title h4 {
 padding: 50px 0; 
 }
+
+.service {
+	margin-top: 20px;
+	margin-bottom: 50px;
+	transition: all 0.3s;
+	position: relative;
+	padding: 20px 20px;
+  width: 90%;
+}
+  
+.section-title {
+  width: 70%;
+  margin: auto;
+  }
+  
+#services {
+  width: 80%;
+  }
 
 .my-text {
 padding-left: 50px;
@@ -866,10 +889,23 @@ figure.tbox {
     width: 80%;
   }
 
-  .section-title {
-    width: 50%;
-    margin: auto;
+  .service {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    transition: all 0.3s;
+    position: relative;
+    padding: 30px 30px;
+    width: 85%;
   }
+    
+  .section-title {
+    width: 70%;
+    margin: auto;
+    }
+    
+  #services {
+    width: 80%;
+    }
 
  }
 
