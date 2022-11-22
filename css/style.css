@@ -199,7 +199,7 @@ MY WORK
 ==================================================
 */
 
-#gallery-filter {
+.gallery-filter .container {
   margin: auto;
   padding-top: 10px;
   padding-bottom: 20px;
@@ -218,8 +218,15 @@ MY WORK
  
 }
 
-.navigation:first-child {
-  margin-left: -5px;
+.navigation {
+  margin-left: 0;
+  padding-left: 0;
+  align-items: left;
+}
+
+.no-padding {
+  padding-left: 0;
+  margin-left: -10px;
 }
 
 .navigation a:hover{
@@ -753,6 +760,14 @@ header .navbar .container {
   font-size: 1.375rem;
 }
 
+.gallery-filter .container{
+  width: 70%;
+}
+
+.navigation a {
+  font-size: 1.1rem;
+}
+
 .my-item .my-title {
   bottom: 50px;
   font-size: 16px;
@@ -811,6 +826,15 @@ header .navbar .container {
   font-size: 2.15rem;
 }
 
+#gallery-filter{
+  width: 60%;
+}
+
+.navigation a {
+  font-size: 1.2rem;
+}
+
+
 .my-item .my-title h2 {
   padding: 10px 0; 
   font-size: 3rem;
@@ -867,6 +891,14 @@ figure.tbox {
     height: 70px !important;
   }
   
+  #gallery-filter{
+    width: 50%;
+  }
+  
+  .navigation a {
+    font-size: 1.25rem;
+  }
+
   .my-item .my-title h2 {
       padding: 10px 0; 
       font-size: 3.2rem;
