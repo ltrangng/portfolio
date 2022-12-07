@@ -28,8 +28,16 @@
   <!-- main css -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+   <!-- Animate CSS  -->
+   <link rel="stylesheet" href="css/animate.css">
   <!-- BXslider CSS  -->
   <link rel="stylesheet" href="css/bxslider/jquery.bxslider.css">
+  <!-- et line font  -->
+  <link rel="stylesheet" href="css/et-line-font/style.css">
+
+  <!-- Magnific-Popup CSS Style -->
+  <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+
 
 
 
@@ -37,6 +45,12 @@
 </head>
 
 <body>
+
+   <!-- Preload the Whole Page -->
+   <div id="preloader">
+    <div id="loading-animation">&nbsp;</div>
+  </div>
+
   <header>
     <nav class="navbar navbar-expand-lg ms-auto my-auto pt-5">
       <div class="container">
@@ -80,20 +94,20 @@
     </div>
   </section>
 
-  <div class="gallery-filter">
+  <div class="gallery-filter animated out" data-animation="fadeInUp" data-delay="0">
     <div class="container">
       <div class="navigation">
-        <a href="#my-work" data-filter="ux-ui" class="button active no-padding">UX / UI</a>
-        <a href="#my-work" data-filter="landscape" class="button">LAND</a>
-        <a href="#my-work" data-filter="research" class="button">RESEARCH</a>
-        <a href="#my-work" data-filter="misc" style="border-right: none;" class="button">ETC.</a>
+        <a href="#my-work" data-filter="ux-ui" class="button no-padding">UX / UI</a>
+        <a href="#my-work" data-filter="land" class="button">LAND</a>
+        <a href="#my-work" data-filter="pub" class="button">PUB</a>
+        <a href="#my-work" data-filter="misc" style="border-right: none;" class="button active">ETC.</a>
       </div>
     </div>
   </div>
   
   <section id="my-work" class="grid row row-cols-2 my-work g-0 text-white ImageContainer">
 
-    <div class="col-12 col-sm-6 col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
       <a href="404.html">
         <div class="my-item filter ux-ui">
           <img src="img/2203-homemade-page/2203-homepage.jpg" height="420px" width="420px" class="border img-fluid"
@@ -107,8 +121,8 @@
       </a>
     </div>
 
-    <div class="col-12 col-sm-6 col-lg-4">
-      <a href="pluto-pay.html">
+    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
+      <a href="pluto-pay.html"> 
         <div class="my-item filter ux-ui">
           <img src="img/2102-plutopay/2102-plutopay.png" height="auto" width="420" class="img-fluid"
             alt="Pluto Pay E-wallet Onboarding Screens"
@@ -121,7 +135,7 @@
       </a>
     </div>
 
-    <div class="col-12 col-sm-6 col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
       <a href="404.html">
         <div class="my-item filter ux-ui">
           <img src="img/2204-alexa/2204-voice-ui-alexa.png" height="auto" width="420" class="border img-fluid"
@@ -136,7 +150,7 @@
     </div>
 
 
-    <div class="col-12 col-sm-6 col-lg-4">
+    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
       <a href="404.html">
         <div class="my-item filter ux-ui">
           <img src="img/connecting-dots.gif" height="auto" width="420px" class="border img-fluid"
@@ -152,7 +166,7 @@
     <div class="col-12 col-sm-6 col-lg-4">
       <a
         href="https://wuestenrot-stiftung.de/publikationen/freiraum-und-lebensqualitaet-in-urbanen-stadtquartieren-download/">
-        <div class="my-item filter research">
+        <div class="my-item filter pub">
           <img src="img/2000-research/2000-research.jpg" height="auto" width="420" class="border img-fluid"
             alt="Book cover: Freiraum und Lebensqualiaet"
             srcset="img/2000-research/2000-research.jpg 500w img/2000-research/2000-research@2x.jpg 1000w">
@@ -166,7 +180,7 @@
 
     <div class="col-12 col-sm-6 col-lg-4">
       <a href="404.html">
-        <div class="my-item filter landscape">
+        <div class="my-item filter land">
           <img src="img/1400-landscape/1700-blauplan.jpg" height="auto" width="420" class="border img-fluid" alt="Blue plan"
             srcset="img/1400-landscape/1700-blauplan.jpg 500w, img/1400-landscape/1700-blauplan@2x.jpg 1000w">
           <div class="my-title">
@@ -388,11 +402,8 @@
 
   <!-- JS libraries and scripts -->
   <script src="js/jquery-1.11.3.min.js"></script>
-
-  <script src="js/jquery.appear.min.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
-  <script src="js/jquery.owl.carousel.min.js"></script>
-  <script src="js/jquery.countTo.js"></script>
+ <script src="js/jquery.appear.min.js"></script>
+   <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
   <script src="js/jquery.imagesloaded.min.js"></script>
   <script src="js/jquery.isotope.js"></script>
@@ -404,8 +415,9 @@
   <script src="js/jquery.magnific-popup.min.js"></script>
   <script src="js/jquery.ajaxchimp.min.js"></script>
   <script src="js/jquery.countdown.js"></script>
-  <script src="js/jquery.navbar-scroll.js"></script>
-  <script src="js/googlemaps.js"></script>
+  <script src="js/googlemaps.js"></script> 
+  <script src="js/jquery.gmaps.js"></script>
+  <script src="js/preloader.js"></script>
 
   <script src="js/main.js"></script>
 
