@@ -1,5 +1,4 @@
 html {
-    font-family: 'TradeGothicLTStd', 'Libre Franklin', sans-serif;
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
@@ -221,7 +220,7 @@ th {
     padding: 0
 }
 
-/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+
 @media print {
 
     *,
@@ -325,15 +324,14 @@ th {
 }
 
 html {
-    font-size: 10px;
+    font-size: 1rem;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
 body {
-    font-family: 'TradeGothicLTStd', 'Libre Franklin', sans-serif;
     font-size: 1rem;
-    line-height: 1.42857143;
-    color: #333;
+    line-height: 1.5;
+    color: #232323;
     background-color: #fff
 }
 
@@ -347,13 +345,13 @@ textarea {
 }
 
 a {
-    color: #337ab7;
+    color: #232323;
     text-decoration: none
 }
 
 a:hover,
 a:focus {
-    color: #23527c;
+    color: gray;
     text-decoration: underline
 }
 
@@ -3201,7 +3199,6 @@ tbody.collapse.in {
 .navbar-fixed-bottom .dropdown .caret {
     border-top: 0;
     border-bottom: 4px dashed;
-    border-bottom: 4px solid \9;
     content: ""
 }
 
@@ -3851,7 +3848,6 @@ select[multiple].input-group-sm>.input-group-btn>.btn {
     position: relative;
     min-height: 50px;
     margin-bottom: 20px;
-    border: 1px solid transparent
 }
 
 @media (min-width:768px) {

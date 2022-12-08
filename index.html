@@ -56,7 +56,7 @@
       <div class="container">
         <a class="navbar-brand nav-link active float-left" aria-current="page" href="index.html">
           <img class="my-logo" src="img/studio-animate.gif" alt="logo" width="auto" height="auto"
-            srcset="img/studio-animate.gif w500w, img/studio-animate@2x.gif 1000w">
+            srcset="img/studio-animate.gif 500w, img/studio-animate@2x.gif 1000w">
         </a>
         <!-- Brand and toggle get grouped for better mobile display -->
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -94,7 +94,7 @@
     </div>
   </section>
 
-  <div class="gallery-filter animated out" data-animation="fadeInUp" data-delay="0">
+  <div class="gallery-filter">
     <div class="container">
       <div class="navigation">
         <a href="#my-work" data-filter="ux-ui" class="button no-padding">UX / UI</a>
@@ -105,11 +105,11 @@
     </div>
   </div>
   
-  <section id="my-work" class="grid row row-cols-2 my-work g-0 text-white ImageContainer">
+  <section id="my-work" class="grid row row-cols-2 my-work g-0 text-white ImageContainer animated out" data-animation="fadeInLeft" data-delay="0">
 
-    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
+    <div class="col-12 col-sm-6 col-lg-4">
       <a href="404.html">
-        <div class="my-item filter ux-ui">
+        <div class="my-item filter ux-ui animated out" data-animation="fadeInUp" data-delay="0">
           <img src="img/2203-homemade-page/2203-homepage.jpg" height="420px" width="420px" class="border img-fluid"
             alt="Low-fidelity Wireframe of Web Design"
             srcset="img/2203-homemade-page/2203-homepage.jpg, img/2203-homemade-page/2203-homepage@2x.jpg 1000w">
@@ -121,9 +121,9 @@
       </a>
     </div>
 
-    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
+    <div class="col-12 col-sm-6 col-lg-4">
       <a href="pluto-pay.html"> 
-        <div class="my-item filter ux-ui">
+        <div class="my-item filter ux-ui animated out" data-animation="fadeInUp" data-delay="0">
           <img src="img/2102-plutopay/2102-plutopay.png" height="auto" width="420" class="img-fluid"
             alt="Pluto Pay E-wallet Onboarding Screens"
             srcset="img/2102-plutopay/2102-plutopay.png 500w, img/2102-plutopay/2102-plutopay@2x.png 1000w">
@@ -135,9 +135,9 @@
       </a>
     </div>
 
-    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
+    <div class="col-12 col-sm-6 col-lg-4">
       <a href="404.html">
-        <div class="my-item filter ux-ui">
+        <div class="my-item filter ux-ui animated out" data-animation="fadeInRight" data-delay="0">
           <img src="img/2204-alexa/2204-voice-ui-alexa.png" height="auto" width="420" class="border img-fluid"
             alt="Alexa Skill Five Minute Kitchen with Invocation Sample"
             srcset="img/2204-alexa/2204-voice-ui-alexa.png 500w, img/2204-alexa/2204-voice-ui-alexa@2x.png 1000w">
@@ -150,14 +150,14 @@
     </div>
 
 
-    <div class="col-12 col-sm-6 col-lg-4 animated out" data-animation="fadeInUp" data-delay="0">
+    <div class="col-12 col-sm-6 col-lg-4">
       <a href="404.html">
-        <div class="my-item filter ux-ui">
+        <div class="my-item filter ux-ui animated out" danimated out>
           <img src="img/connecting-dots.gif" height="auto" width="420px" class="border img-fluid"
-            alt="Connecting dot animation">
+            alt="Connecting dots">
           <div class="my-title">
-            <h2 class="fs-2">UI / IDx / UX</h2>
-            <h4>STUDY</h4>
+            <h2 class="fs-2">DATA VISUALIZATION</h2>
+            <h4>ANALYTICS</h4>
           </div>
         </div>
       </a>
@@ -166,7 +166,7 @@
     <div class="col-12 col-sm-6 col-lg-4">
       <a
         href="https://wuestenrot-stiftung.de/publikationen/freiraum-und-lebensqualitaet-in-urbanen-stadtquartieren-download/">
-        <div class="my-item filter pub">
+        <div class="my-item filter pub animated out" data-animation="fadeInUp" data-delay="0">
           <img src="img/2000-research/2000-research.jpg" height="auto" width="420" class="border img-fluid"
             alt="Book cover: Freiraum und Lebensqualiaet"
             srcset="img/2000-research/2000-research.jpg 500w img/2000-research/2000-research@2x.jpg 1000w">
@@ -180,7 +180,7 @@
 
     <div class="col-12 col-sm-6 col-lg-4">
       <a href="404.html">
-        <div class="my-item filter land">
+        <div class="my-item filter land animated out" data-animation="fadeInRight" data-delay="0">
           <img src="img/1400-landscape/1700-blauplan.jpg" height="auto" width="420" class="border img-fluid" alt="Blue plan"
             srcset="img/1400-landscape/1700-blauplan.jpg 500w, img/1400-landscape/1700-blauplan@2x.jpg 1000w">
           <div class="my-title">
@@ -194,8 +194,21 @@
 
   <div class="col-12 col-sm-6 col-lg-4">
     <a href="404.html">
-      <div class="my-item my-item-hidden filter misc">
-        <img src="img/1900-sketch/1900-urban-sketching.jpg" height="auto" width="420" class="img-fluid" alt="Blue plan"
+      <div class="my-item my-item-hidden filter ux-ui animated out" danimated out>
+        <img src="img/2200-figma/2200-autolayout.gif" height="auto" width="420px" class="border img-fluid"
+          alt="Screen recording of auto layout process">
+        <div class="my-title">
+          <h2 class="fs-2">FRIENDS OF FIGMA</h2>
+          <h4>PROTOTYPING</h4>
+        </div>
+      </div>
+    </a>
+  </div>
+
+  <div class="col-12 col-sm-6 col-lg-4">
+    <a href="404.html">
+      <div class="my-item my-item-hidden filter misc animated out" data-animation="fadeInRight" data-delay="0">
+        <img src="img/1900-sketch/1900-urban-sketching.jpg" height="auto" width="420" class="img-fluid" alt="Sketch of an old town on dark paper"
           srcset="img/1900-sketch/1900-urban-sketching.jpg 500w, img/1900-sketch/1900-urban-sketching@2x.jpg 1000w">
         <div class="my-title">
           <h2 class="fs-2">URBAN SKETCHING + STORYBOARD</h2>
@@ -211,14 +224,14 @@
   <section class="container-fluid bg-dark">
     <div id="services">
       <div class="container text-white text-center pt-5">
-        <div class="row section-title ">
+        <div class="row section-title animated out"  data-animation="fadeInUp" data-delay="0">
           <h3>I cover the whole spectrum of User Experience, with a focus on Interaction Design based on solid User
             Research.</h3>
         </div>
         <div class="space"></div>
         <div class="row">
           <div class="col-12 col-sm-4">
-            <div class="service">
+            <div class="service animated out" data-animation="fadeInLeft" data-delay="0">
               <h5>UX DESIGN</h5>
               <br>
               <li>Design Thinking</li>
@@ -230,7 +243,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-4">
-            <div class="service">
+            <div class="service animated out" data-animation="fadeInLeft" data-delay="0">
               <h5>USER RESEARCH</h5>
               <br>
 
@@ -244,7 +257,7 @@
             </div>
           </div>
           <div class="col-12 col-sm-4">
-            <div class="service">
+            <div class="service animated out" data-animation="fadeInRight" data-delay="0">
               <h5>UI ENGINEERING</h5>
 
               <li>Design System</li>
@@ -264,14 +277,14 @@
 
 
   <div id="about-me">
-    <section class="row about-me">
+    <section class="row about-me animated out" data-animation="fadeInLeft" data-delay="0">
       <div class="col-12 col-md-12 col-lg-4 text-center">
         <div class="row">
 
           <img src="img/profile-pic.jpg" class="profile-pic mx-auto">
         </div>
         <aside class="row py-4 f_widget social_widget text-center">
-          <div class="f_title container">
+          <div class="f_title container animated out" data-animation="fadeInUp" data-delay="0">
             <h4 class="text text-uppercase">Say Hi, Hola, Servus, Chào</h4>
             <div class="list">
               <a href="https://www.linkedin.com/in/letrang-studio/">
@@ -287,7 +300,7 @@
         </aside>
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 my-text">
+      <div class="col-12 col-md-6 col-lg-4 my-text animated out" data-animation="fadeInRight" data-delay="0">
 
         <p>I am a UX designer with a profound 10+ year background in the planning and architecture industry. Urban
           Design is also a form of Experience Design, only that the product is tied to a physical place, and mainly
@@ -300,7 +313,7 @@
 
       </div>
 
-      <div class="col-12 col-md-6 col-lg-4 my-text float-end">
+      <div class="col-12 col-md-6 col-lg-4 my-text float-end animated out" data-animation="fadeInRight" data-delay="0">
 
 
         <p>The world I knew has been altered by softwares. As an architect, I found myself moving between building
@@ -332,8 +345,8 @@
               <!-- Testimonial -->
               <li>
                 <img src="img/alicia.jpg" alt="Profile picture of Alicia" height="100px" width="auto">
-                <p>"I am so so so proud of what Trang was able to do in her UX Design Program. She learned new
-                  skills, and more importantly, adapted a new mindset about design. It's incredible."</p>
+                <p>I am so so so proud of what Trang was able to do in her UX Design Program. She learned new
+                  skills, and more importantly, adapted a new mindset about design. It's incredible.</p>
                 <div class="testimonials-author">Alicia Zhong - Principal UX Research Consultant, UX Mentor</div>
               </li>
 
@@ -352,6 +365,12 @@
                   effort in her research and showed a great interest in the topic of sustainable city planning and
                   ecological design.</p>
                 <div class="testimonials-author">Nicole Pfoser - Dr.-Ing. Hfwu, Director of stadtnatur.de</div>
+              </li>
+
+              <li>
+                <img src="img/cornelia.jpeg" alt="Profile picture of Cornelia" height="100px" width="auto">
+                <p>Frau Nguyen hat eine sehr angenehme und strukturierte Arbeitsweise, die sie zielgerichtet im Büro einbringen konnte. Sie zeigte eine schnelle Auffassungsgabe in der Bearbeitung verschiedener Themenfelder.</p>
+                <div class="testimonials-author">Prof. Cornelia Bott - Planungsgruppe Landschaft und Raum</div>
               </li>
 
             </ul>
@@ -402,6 +421,8 @@
 
   <!-- JS libraries and scripts -->
   <script src="js/jquery-1.11.3.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-hover-dropdown.min.js"></script>
  <script src="js/jquery.appear.min.js"></script>
    <script src="js/jquery.bxslider.min.js"></script>
   <script src="js/jquery.easing.1.3.js"></script>
@@ -417,7 +438,6 @@
   <script src="js/jquery.countdown.js"></script>
   <script src="js/googlemaps.js"></script> 
   <script src="js/jquery.gmaps.js"></script>
-  <script src="js/preloader.js"></script>
 
   <script src="js/main.js"></script>
 
