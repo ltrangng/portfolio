@@ -441,7 +441,7 @@ padding-top: 10px;
 
 .social_widget .list a {
   color: #232323;
-  font-size: 32px;
+  font-size: 24px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
   -o-transition: all 0.4s ease 0s;
@@ -453,7 +453,7 @@ padding-top: 10px;
 }
 
 .social_widget .list a:hover {
-  color: gray;
+  color: lightgray;
 }
 
 .my-text {
