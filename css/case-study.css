@@ -1026,10 +1026,32 @@ footer {
   text-align: center;
 }
 
+
+.social_widget .list a i {
+  margin: 0;
+  display: inline-block;
+  justify-content: space-between;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.social_widget .list a {
+  color: #232323;
+  font-size: 24px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
 .back-to-top {
   text-align: center;
   background: gray;
-  color: white;
+  color: #fff;
   display: none;
   width: 40px;
   height: 40px;
@@ -1051,10 +1073,6 @@ footer {
 .back-to-top:hover {
   opacity: .9;
 }
-
-.back-to-top {
-  visibility: hidden;
-  }
 
 /*
 ==================================================
