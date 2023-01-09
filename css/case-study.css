@@ -1026,15 +1026,12 @@ footer {
   text-align: center;
 }
 
-
 .social_widget .list a i {
   margin: 0;
   display: inline-block;
   justify-content: space-between;
-  padding-top: 4px;
   padding-left: 10px;
   padding-right: 10px;
-  margin-bottom: 20px;
   font-size: 1.5rem;
   text-decoration: none;
 }
