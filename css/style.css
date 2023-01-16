@@ -258,6 +258,10 @@ MY WORK
   height: 100%;
 }
 
+.my-item-hidden {
+  display: none;
+}
+
 
 .item:before {
   content: "";
@@ -885,7 +889,7 @@ header .navbar .container {
 }
 
 .container-general .gallery-wrap {
-  height: 70vh;
+  height: 65vh;
 }
 
 
@@ -956,7 +960,7 @@ header .navbar .container {
 }
 
 .container-general .gallery-wrap {
-  height: 80vh;
+  height: 70vh;
 }
 
 .navigation a {
@@ -1024,6 +1028,10 @@ figure.tbox {
     margin-bottom: 80px;
   }
   
+  .container-general .gallery-wrap {
+    height: 75vh;
+  }
+
   .navigation a {
     font-size: 1.25rem;
     padding: 10px;
