@@ -259,7 +259,7 @@ MY WORK
 }
 
 
-.my-item:before {
+.item:before {
   content: "";
   position: absolute;
   top: 2px;
@@ -271,21 +271,21 @@ MY WORK
   transition: all 300ms ease;
 }
 
-.my-item-hidden {
+.item-hidden {
   display: none;
 }
 
-.my-item img {
+.item img {
   width: 100%;
   height: 100%;
 }
 
-.my-item img:hover {
+.item img:hover {
   filter: none;
  
 }
 
-.my-item .my-title {
+.item .my-title {
   position: absolute;
   width: 100%;
   left: 50%;
@@ -304,7 +304,7 @@ MY WORK
   transition: all 0.4s ease 0s;
 }
 
-.my-item .my-title h2 {
+.item .my-title h2 {
   margin-bottom: 5px;
   -webkit-transition: all 0.4s ease 0s;
   -moz-transition: all 0.4s ease 0s;
@@ -321,21 +321,131 @@ MY WORK
   font-size: 2.75rem;
 }
 
-.my-item .my-title h4 {
+.item .my-title h4 {
   padding: 50px 0;
   font-size: 1.2rem;
 }
 
-.my-item:hover:before {
+.item:hover:before {
   opacity: 0.4;
 }
 
-.my-item:hover .my-title {
+.item:hover .my-title {
   opacity: 1;
   visibility: visible;
   bottom: 30px;
   color: white;
 }
+
+
+
+.heading {
+  background: white;
+  height: 5%;
+  margin: 10px;
+  padding: 10px;
+}
+.swiper-container {
+  width: 100%;
+  height: 90%;
+}
+.swiper-slide {
+  text-align: center;
+  background: #fff;
+ /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container-general {
+  padding: 32px 0;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.container-general .gallery-wrap {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 50vh;
+}
+
+.container-general .gallery-wrap .item {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  border: 1px white solid;
+  background-position: center;
+  background-size: cover;
+  background-repeat: none;
+  transition: all 0.8s ease;
+}
+.container-general .gallery-wrap .item:hover {
+  flex: 7;
+}
+
+.wrap-effect-2 .item:hover {
+  transform: translate3d(0, 0, 100px);
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: saturate(2) contrast(120%);
+}
+
+.wrap-effect-3 .item:hover {
+  animation: rotate 0.7s ease-in-out both;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+
+.wrap-effect-4 .item:hover {
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.2);
+  filter: saturate(2) contrast(120%);
+}
+
+.inspire {
+  border: 1px solid rgba(22, 76, 167, 0.6);
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  text-decoration: none;
+  margin: 10px;
+  padding: 10px;
+}
+.inspire:after {
+  background: #38ef7d;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.4;
+  position: absolute;
+  top: -50px;
+  transform: rotate(35deg);
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+  width: 50px;
+  z-index: -10;
+}
+.inspire:hover:after {
+  left: 120%;
+  transition: all 550ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+ }
+  25% {
+    transform: rotate(10deg) translate3d(0, 0, 0);
+ }
+  50% {
+    transform: rotate(-10deg) translate3d(0, 0, 0);
+ }
+  75% {
+    transform: rotate(5deg) translate3d(0, 0, 0);
+ }
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+ }
+}
+
 
 /*
 ==================================================
@@ -368,7 +478,7 @@ SERVICES
 	padding-bottom: 40px;
 }
 
-#services h3 {
+#services h4 {
   font-family: 'TradeGothicLTS-Light';
   font-weight: bolder;
   text-transform: uppercase;
@@ -388,7 +498,7 @@ SERVICES
 }
 
 .section-title {
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
@@ -692,6 +802,15 @@ RESPONSIVE
   display: block;
 }
 
+.container-general .gallery-wrap {
+  height: 60vh;
+}
+
+.item .my-title {
+  bottom: 50px;
+  font-size: 16px;
+} 
+
 .navigation a {
   padding: 5px;
   font-size: 1.05rem;
@@ -765,6 +884,11 @@ header .navbar .container {
   width: 70%;
 }
 
+.container-general .gallery-wrap {
+  height: 70vh;
+}
+
+
 .navigation a {
   font-size: 1.1rem;
 }
@@ -831,6 +955,10 @@ header .navbar .container {
   width: 60%;
 }
 
+.container-general .gallery-wrap {
+  height: 80vh;
+}
+
 .navigation a {
   font-size: 1.2rem;
 }
@@ -872,7 +1000,6 @@ padding-left: 50px;
 }
 
 figure.tbox {
-  
   margin: 0px;
   min-width: 240px;
   max-width: 300px;
