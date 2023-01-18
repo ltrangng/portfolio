@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $(".button").click(function(){
         var name = $(this).attr("data-filter");
-        if(name == "misc"){
+        if(name == "mix"){
             $(".filter").filter("."+name).show("2000")
         }else{
             $(".filter").not("."+name).hide("2000");

@@ -55,6 +55,11 @@ BASE
 ==============================================
 */
 
+html {
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+
 body {
   font-family: 'FuturaLT', 'Lato', sans-serif;
   font-size: 1rem;
