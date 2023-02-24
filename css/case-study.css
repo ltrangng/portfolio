@@ -977,6 +977,7 @@ DELIVER
 
 #prototype-final .container {
   position: relative;
+  width: 100%;
   z-index: 3;
 }
 
@@ -996,6 +997,7 @@ DELIVER
   padding-bottom: 20px;
   width: 300px;
   height: auto;
+  float: right;
 }
 
 
@@ -1019,7 +1021,14 @@ FOOTER
 */
 
 footer {
-    margin: 20px auto;
+  margin: 40px auto;
+  padding-bottom: 40px;
+}
+
+.myfooter {
+  max-height: 300px;
+  background-color: white;
+  text-justify: inter-word;
 }
 
 
