@@ -1022,11 +1022,11 @@ FOOTER
 
 footer {
   margin: 40px auto;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .myfooter {
-  max-height: 300px;
+  max-height: 240px;
   background-color: white;
   text-justify: inter-word;
 }
