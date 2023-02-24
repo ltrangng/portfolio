@@ -177,58 +177,6 @@ $(document).ready(function($) {
 
 
     /* ==============================================
-    Contact Form
-    =============================================== */
-
-    $('#contactform').submit(function(){
-
-        var action = $(this).attr('action');
-
-        $("#alert").slideUp(750,function() {
-            $('#alert').hide();
-
-        $('#submit')
-            .after('<img src="../images/ajax-loader.GIF" class="contactloader" />')
-            .attr('disabled','disabled');
-
-        $.post(action, {
-            name: $('#name').val(),
-            email: $('#email').val(),
-            message: $('#message').val()
-        },
-            function(data){
-                document.getElementById('alert').innerHTML = data;
-                $('#alert').slideDown('slow');
-                $('#contactform img.contactloader').fadeOut('slow',function(){$(this).remove();});
-                $('#submit').removeAttr('disabled');
-                if(data.match('success') !== null) {
-                    $('#name').val('');
-                    $('#email').val('');
-                    $('#message').val('');
-                }
-            }
-        );
-
-        });
-
-        return false;
-
-    });
-
-    // Countdown
-    // To change date, simply edit: var endDate = "June 26, 2015 20:39:00";
-    $(function() {
-      var endDate = "June 26, 2016 20:39:00";
-      $('.soon-countdown .row').countdown({
-        date: endDate,
-        render: function(data) {
-          $(this.el).html('<div><div><span>' + (parseInt(this.leadingZeros(data.years, 2)*365) + parseInt(this.leadingZeros(data.days, 2))) + '</span><span>days</span></div><div><span>' + this.leadingZeros(data.hours, 2) + '</span><span>hours</span></div></div><div class="lj-countdown-ms"><div><span>' + this.leadingZeros(data.min, 2) + '</span><span>minutes</span></div><div><span>' + this.leadingZeros(data.sec, 2) + '</span><span>seconds</span></div></div>');
-        }
-      });
-    });
-
-
-    /* ==============================================
     Fade In .back-to-top
     =============================================== */
 
@@ -249,36 +197,7 @@ $(document).ready(function($) {
         return false;
     });
 
-    /* ==============================================
-        Google Map
-    =============================================== */
 
-        var mapLocation = new google.maps.LatLng(34.031428,-118.2071542,17);
-        var $mapis = $('#map');
-        if ($mapis.length > 0) {
-            var map;
-            map = new GMaps({
-                streetViewControl : true,
-                overviewMapControl: true,
-                mapTypeControl: true,
-                zoomControl : true,
-                panControl : true,
-                scrollwheel: false,
-                center: mapLocation,
-                el: '#map',
-                zoom: 16,
-                styles: [{"featureType":"landscape","stylers":[{"saturation":-100},{"lightness":65},{"visibility":"on"}]},{"featureType":"poi","stylers":[{"saturation":-100},{"lightness":51},{"visibility":"simplified"}]},{"featureType":"road.highway","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"road.arterial","stylers":[{"saturation":-100},{"lightness":30},{"visibility":"on"}]},{"featureType":"road.local","stylers":[{"saturation":-100},{"lightness":40},{"visibility":"on"}]},{"featureType":"transit","stylers":[{"saturation":-100},{"visibility":"simplified"}]},{"featureType":"administrative.province","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":-25},{"saturation":-100}]},{"featureType":"water","elementType":"geometry","stylers":[{"hue":"#ffff00"},{"lightness":-25},{"saturation":-97}]}]
-            });
-            var image = new google.maps.MarkerImage('../images/map-icon.png');
-            map.addMarker({
-                position: mapLocation,
-                icon: image,
-                title: 'Visia',
-                infoWindow: {
-                    content: '<p><strong>Visia</strong><br/>121 Somewhere Ave, Suite 123<br/>P: (123) 456-7890<br/>Australia</p>'
-                }
-            });
-        }
 
     /* ==============================================
      BX-Project Slider
@@ -428,13 +347,5 @@ $(window).load(function(){
             });
         }
 
-    /* ==============================================
-    Preloader
-    =============================================== */
-
-    // will first fade out the loading animation
-    $("#loading-animation").fadeOut();
-    // will fade out the whole DIV that covers the website.
-    $("#preloader").delay(600).fadeOut("slow");
 
 });
