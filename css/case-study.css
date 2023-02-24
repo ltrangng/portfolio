@@ -1106,7 +1106,7 @@ RESPONSIVE
   }
 
   .navbar .nav-item .nav-link {
-    font-size: 1.05rem;
+    font-size: 1.0rem;
   }
 
   .hero-content h1 {
@@ -1313,7 +1313,7 @@ RESPONSIVE
   }
 
   .navbar .nav-item .nav-link {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .hero-content h1 {
@@ -1383,7 +1383,7 @@ RESPONSIVE
 @media (min-width: 1200px) { 
 
   .navbar-brand img {
-    height: 70px !important;
+    height: 65px !important;
   }
   header .navbar .container {
     width: 75% !important;
@@ -1394,7 +1394,7 @@ RESPONSIVE
   }
 
   .navbar .nav-item .nav-link {
-    font-size: 1.125rem;
+    font-size: 1rem;
   }
 
   .hero-content h1 {
