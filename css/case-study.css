@@ -944,6 +944,7 @@ DESIGN
 
 #prototype-final {
   padding-top: 40px;
+  margin-bottom: 40px;
 }
 
 
@@ -956,6 +957,7 @@ DESIGN
 DELIVER
 ==============================================
 */
+
 #prototype-final {
   position: relative;
   padding: 80px 0!important;
@@ -992,13 +994,13 @@ DELIVER
   font-size: 1rem;
 }
 
-#prototype-final img {
+/* #prototype-final img {
   margin: 0 auto;
   padding-bottom: 20px;
   width: 300px;
   height: auto;
   float: right;
-}
+} */
 
 
 /*
